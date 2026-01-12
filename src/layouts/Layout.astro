@@ -17,9 +17,7 @@ import logo from "../assets/logo.png";
   </head>
   <body class="font-sans text-[#111827] bg-white">
     <!-- Navigation -->
-    <header
-      class="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-sm z-50"
-    >
+    <header class="fixed top-0 w-full z-50 transition-all duration-300">
       <nav class="container mx-auto px-4 py-2">
         <div class="flex justify-between items-center">
           <a href="/" class="block w-28">
@@ -52,7 +50,7 @@ import logo from "../assets/logo.png";
     </header>
 
     <!-- Main Content -->
-    <main class="pt-16 relative z-10">
+    <main class="relative z-10">
       <slot />
     </main>
 
@@ -89,6 +87,43 @@ import logo from "../assets/logo.png";
       document.querySelectorAll(".fade-in").forEach((el) => {
         observer.observe(el);
       });
+
+      // Header scroll effect
+      const header = document.querySelector("header");
+      const navLinks = document.querySelectorAll("header nav a");
+      const logoContainer = document.querySelector("header a.block");
+
+      function updateHeader() {
+        if (!header) return;
+
+        if (window.scrollY > 50) {
+          header.classList.add(
+            "bg-white/95",
+            "backdrop-blur-sm",
+            "shadow-sm",
+            "text-[#111827]",
+          );
+          header.classList.remove("text-white", "bg-transparent");
+          // Reset logo filter if applied
+          if (logoContainer instanceof HTMLElement)
+            logoContainer.style.filter = "none";
+        } else {
+          header.classList.remove(
+            "bg-white/95",
+            "backdrop-blur-sm",
+            "shadow-sm",
+            "text-[#111827]",
+          );
+          header.classList.add("text-white", "bg-transparent");
+          // Make logo white (assuming it's dark text)
+          if (logoContainer instanceof HTMLElement)
+            logoContainer.style.filter = "brightness(0) invert(1)";
+        }
+      }
+
+      window.addEventListener("scroll", updateHeader);
+      // Initial check
+      updateHeader();
     </script>
   </body>
 </html>
