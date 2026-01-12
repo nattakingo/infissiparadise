@@ -1,0 +1,94 @@
+---
+import "../styles/global.css";
+import { Image } from "astro:assets";
+import logo from "../assets/logo.png";
+---
+
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Infissi Paradise - Qualità che Dura</title>
+    <meta
+      name="description"
+      content="Infissi Paradise: soluzioni su misura per infissi in PVC, alluminio, grate di sicurezza, zanzariere, tende da sole e porte blindate"
+    />
+  </head>
+  <body class="font-sans text-[#111827] bg-white">
+    <!-- Navigation -->
+    <header
+      class="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-sm z-50"
+    >
+      <nav class="container mx-auto px-4 py-2">
+        <div class="flex justify-between items-center">
+          <a href="/" class="block w-28">
+            <Image
+              src={logo}
+              alt="Infissi Paradise"
+              class="h-auto w-full object-contain"
+              loading="eager"
+            />
+          </a>
+          <div class="hidden md:flex space-x-6">
+            <a href="#chi-siamo" class="hover:text-[#DC2626] transition-colors"
+              >Chi Siamo</a
+            >
+            <a href="#prodotti" class="hover:text-[#DC2626] transition-colors"
+              >Prodotti</a
+            >
+            <a href="#galleria" class="hover:text-[#DC2626] transition-colors"
+              >Galleria</a
+            >
+            <a href="#ecobonus" class="hover:text-[#DC2626] transition-colors"
+              >Ecobonus</a
+            >
+            <a href="#contatti" class="hover:text-[#DC2626] transition-colors"
+              >Contatti</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="pt-16 relative z-10">
+      <slot />
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#111827] text-white py-8">
+      <div class="container mx-auto px-4 text-center">
+        <p>&copy; 2025 Infissi Paradise. Tutti i diritti riservati.</p>
+        <div class="mt-4">
+          <a
+            href="https://www.instagram.com/infissiparadise/?hl=en"
+            target="_blank"
+            class="text-white hover:text-[#DC2626] transition-colors"
+          >
+            Seguici su Instagram
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript per animazioni -->
+    <script>
+      // Intersection Observer per fade-in animations
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+            }
+          });
+        },
+        { threshold: 0.1 },
+      );
+
+      document.querySelectorAll(".fade-in").forEach((el) => {
+        observer.observe(el);
+      });
+    </script>
+  </body>
+</html>
