@@ -40,34 +40,15 @@ const sortedImages = Object.keys(galleryFiles)
         >
             {
                 sortedImages.map((img, index) => (
-                    <div class="cursor-pointer overflow-hidden rounded-lg shadow-md mb-4 group">
+                    <div class="overflow-hidden rounded-lg shadow-md mb-4 group break-inside-avoid">
                         <Image
                             src={img}
                             alt={`Lavoro ${index + 1}`}
-                            class="w-full h-auto transition-transform duration-300 group-hover:scale-105 gallery-image"
-                            data-full-src={img.src}
+                            class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
                         />
                     </div>
                 ))
             }
-        </div>
-
-        <!-- Lightbox -->
-        <div
-            id="lightbox"
-            class="fixed inset-0 z-50 bg-black/90 hidden items-center justify-center opacity-0 transition-opacity duration-300"
-        >
-            <button
-                id="lightbox-close"
-                class="absolute top-4 right-4 text-white text-4xl font-bold hover:text-red-500 transition-colors"
-                >&times;</button
-            >
-            <img
-                id="lightbox-img"
-                src=""
-                alt="Ingrandimento"
-                class="max-h-[90vh] max-w-[90vw] object-contain rounded-md shadow-2xl transform scale-95 transition-transform duration-300"
-            />
         </div>
 
         <div class="flex flex-wrap justify-center gap-4 mt-12">
@@ -107,67 +88,3 @@ const sortedImages = Object.keys(galleryFiles)
         </div>
     </div>
 </section>
-
-<script>
-    // Lightbox Logic
-    const lightbox = document.getElementById("lightbox");
-    const lightboxImg = document.getElementById(
-        "lightbox-img",
-    ) as HTMLImageElement;
-    const closeBtn = document.getElementById("lightbox-close");
-    const galleryImages = document.querySelectorAll(".gallery-image");
-
-    if (lightbox && lightboxImg && closeBtn) {
-        // Open Lightbox
-        galleryImages.forEach((img) => {
-            img.addEventListener("click", (e) => {
-                const target = e.target as HTMLImageElement;
-                const fullSrc = target.dataset.fullSrc;
-
-                if (fullSrc) {
-                    lightboxImg.src = fullSrc;
-                    lightbox.classList.remove("hidden");
-                    // Small delay to allow display:flex to apply before opacity transition
-                    setTimeout(() => {
-                        lightbox.classList.remove("opacity-0");
-                        lightbox.classList.add("flex"); // Ensure flex is applied
-                        lightboxImg.classList.remove("scale-95");
-                        lightboxImg.classList.add("scale-100");
-                    }, 10);
-                    document.body.style.overflow = "hidden"; // Disable scroll
-                }
-            });
-        });
-
-        // Close Lightbox Function
-        const closeLightbox = () => {
-            lightbox.classList.add("opacity-0");
-            lightboxImg.classList.remove("scale-100");
-            lightboxImg.classList.add("scale-95");
-
-            setTimeout(() => {
-                lightbox.classList.add("hidden");
-                lightbox.classList.remove("flex");
-                lightboxImg.src = "";
-                document.body.style.overflow = ""; // Enable scroll
-            }, 300);
-        };
-
-        // Close on button click
-        closeBtn.addEventListener("click", closeLightbox);
-
-        // Close on background click
-        lightbox.addEventListener("click", (e) => {
-            if (e.target === lightbox) {
-                closeLightbox();
-            }
-        });
-
-        // Close on Escape key
-        document.addEventListener("keydown", (e) => {
-            if (e.key === "Escape" && !lightbox.classList.contains("hidden")) {
-                closeLightbox();
-            }
-        });
-    }
-</script>
