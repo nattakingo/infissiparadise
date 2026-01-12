@@ -1,0 +1,62 @@
+---
+import { Image } from "astro:assets";
+import teamImg from "../assets/team.jpg";
+---
+
+<section id="chi-siamo" class="relative z-10 py-24 bg-[#F9FAFB] fade-in">
+    <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center mb-12 text-[#DC2626]">
+            Chi Siamo
+        </h2>
+        <div class="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+            <div>
+                <h3 class="text-2xl font-semibold mb-4">
+                    Infissi Paradise: La Tua Sicurezza, La Nostra Passione
+                </h3>
+                <p class="text-[#374151] mb-6 leading-relaxed">
+                    Da oltre 20 anni, Infissi Paradise è il punto di riferimento
+                    per l'installazione di infissi di alta qualità nella tua
+                    zona. Specializzati in soluzioni su misura, offriamo
+                    prodotti che uniscono design, efficienza energetica e
+                    sicurezza.
+                </p>
+                <p class="text-[#374151] mb-8 leading-relaxed">
+                    Il nostro team di esperti ti accompagna in ogni fase: dalla
+                    scelta del prodotto perfetto alla posa professionale,
+                    garantendo risultati che durano nel tempo.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="text-center">
+                        <div class="text-[#DC2626] text-3xl mb-2">✓</div>
+                        <h4 class="font-semibold mb-1">Installazione</h4>
+                        <p class="text-sm text-[#6B7280]">
+                            Professionale e garantita
+                        </p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-[#DC2626] text-3xl mb-2">✓</div>
+                        <h4 class="font-semibold mb-1">Assistenza</h4>
+                        <p class="text-sm text-[#6B7280]">
+                            Supporto post-vendita
+                        </p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-[#DC2626] text-3xl mb-2">✓</div>
+                        <h4 class="font-semibold mb-1">Sopralluoghi</h4>
+                        <p class="text-sm text-[#6B7280]">
+                            Preventivi gratuiti
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="relative">
+                <Image
+                    src={teamImg}
+                    alt="Team Infissi Paradise"
+                    class="rounded-lg shadow-xl w-full"
+                />
+            </div>
+        </div>
+    </div>
+</section>
