@@ -1,0 +1,142 @@
+---
+import { Image } from "astro:assets";
+import pvcImg from "../assets/pvc.jpg";
+import aluImg from "../assets/alu.jpg";
+import grateImg from "../assets/grate.jpg";
+import zanzariereImg from "../assets/zanzariere.jpg";
+import tendeImg from "../assets/tende.jpg";
+import porteImg from "../assets/porte.jpg";
+import avvolgibiliImg from "../assets/avvolgibili.png";
+import serratureImg from "../assets/serrature.png";
+import mobiliAluImg from "../assets/mobili_alluminio.png";
+
+const products = [
+    {
+        title: "Infissi in PVC",
+        description:
+            "Soluzioni moderne ed efficienti, isolamento termico superiore e bassa manutenzione.",
+        image: pvcImg,
+        features: [
+            "Alta efficienza energetica",
+            "Materiali riciclabili",
+            "Manutenzione minima",
+        ],
+    },
+    {
+        title: "Infissi in Alluminio",
+        description:
+            "Design moderno e resistenza straordinaria, perfetti per architetture contemporanee.",
+        image: aluImg,
+        features: [
+            "Leggerezza e robustezza",
+            "Design minimalista",
+            "Resistenza alle intemperie",
+        ],
+    },
+    {
+        title: "Grate di Sicurezza",
+        description:
+            "Protezione massima senza sacrificare l'estetica, soluzioni antisollevamento certificate.",
+        image: grateImg,
+        features: [
+            "Massima protezione",
+            "Design personalizzabile",
+            "Certificazioni europee",
+        ],
+    },
+    {
+        title: "Zanzariere",
+        description:
+            "Soluzioni pratiche ed efficaci contro insetti, disponibili in diverse configurazioni.",
+        image: zanzariereImg,
+        features: [
+            "Protezione totale",
+            "Meccanismi scorrevoli",
+            "Installazione a incasso",
+        ],
+    },
+    {
+        title: "Tende da Sole",
+        description:
+            "Protezione solare efficiente e design elegante per terrazze e finestre.",
+        image: tendeImg,
+        features: [
+            "Tessuti tecnici premium",
+            "Automazione disponibile",
+            "Design personalizzabile",
+        ],
+    },
+    {
+        title: "Porte Blindate",
+        description:
+            "Sicurezza certificata con design moderno, protezione per la tua famiglia.",
+        image: porteImg,
+        features: [
+            "Certificazioni antieffrazione",
+            "Isolamento termico",
+            "Design personalizzato",
+        ],
+    },
+    {
+        title: "Avvolgibili",
+        description:
+            "Automazione e comfort per la tua casa, disponibili in PVC e alluminio coibentato.",
+        image: avvolgibiliImg,
+        features: [
+            "Coibentazione termica",
+            "Motorizzazione",
+            "Ampia scelta colori",
+        ],
+    },
+    {
+        title: "Cambio Serrature",
+        description:
+            "Aggiorna la tua sicurezza con cilindri europei di ultima generazione.",
+        image: serratureImg,
+        features: ["Cilindri europei", "Chiavi protette", "Pronto intervento"],
+    },
+    {
+        title: "Mobili in Alluminio",
+        description:
+            "Soluzioni resistenti e su misura per esterni, balconi e terrazzi.",
+        image: mobiliAluImg,
+        features: ["Su misura", "Resistenza totale", "Zero manutenzione"],
+    },
+];
+---
+
+<section id="prodotti" class="py-24 fade-in">
+    <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center mb-12 text-[#DC2626]">
+            I Nostri Prodotti
+        </h2>
+        <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto"
+        >
+            {
+                products.map((product) => (
+                    <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden border-2 border-transparent">
+                        <Image
+                            src={product.image}
+                            alt={product.title}
+                            class="w-full h-48 object-cover"
+                        />
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">
+                                {product.title}
+                            </h3>
+                            <p class="text-[#374151] mb-4">
+                                {product.description}
+                            </p>
+                            <ul class="text-sm text-[#6B7280] space-y-1">
+                                {product.features.map((feature) => (
+                                    <li>• {feature}</li>
+                                ))}
+                            </ul>
+                        </div>
+                    </div>
+                ))
+            }
+        </div>
+    </div>
+</section>
