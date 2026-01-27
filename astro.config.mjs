@@ -5,7 +5,7 @@ import sitemap from '@astrojs/sitemap';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://infissiparadise.it', // Placeholder, user should update if different
-  base: '/infissiparadise',
+
   vite: {
     plugins: [tailwindcss()],
   },
