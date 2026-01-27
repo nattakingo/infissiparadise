@@ -9,6 +9,11 @@ import porteImg from "../assets/porte.jpg";
 import avvolgibiliImg from "../assets/avvolgibili.png";
 import serratureImg from "../assets/serrature.png";
 import mobiliAluImg from "../assets/mobili_alluminio.png";
+import Euro70Img from "../assets/Euro70.png";
+import oscuranteImg from "../assets/oscurantecassonetto.png";
+import portonciniImg from "../assets/portoncini.png";
+import synegoImg from "../assets/synego.png";
+import synegoScorrevoliImg from "../assets/SynegoScorrevoli.png";
 
 const products = [
     {
@@ -140,3 +145,263 @@ const products = [
         </div>
     </div>
 </section>
+
+<section id="rehau" class="py-24 bg-gray-50 overflow-hidden">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-16 fade-in" data-observer>
+            <h2 class="text-3xl font-bold text-gray-800 mb-4">
+                Partner Ufficiale
+            </h2>
+            <div class="flex justify-center items-center mb-6">
+                <span
+                    class="text-6xl font-black tracking-tighter text-[#E60000]"
+                    style="font-family: Arial, sans-serif;">REHAU</span
+                >
+            </div>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                Qualità tedesca e design innovativo per i tuoi infissi.
+            </p>
+        </div>
+
+        <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto"
+        >
+            <div
+                class="group relative bg-white rounded-2xl shadow-xl overflow-hidden transform hover:-translate-y-2 transition-all duration-300 fade-in"
+                data-observer
+            >
+                <div
+                    class="absolute top-0 right-0 bg-[#E60000] text-white px-3 py-1 rounded-bl-lg z-10 font-bold text-sm"
+                >
+                    PREMIUM
+                </div>
+                <div
+                    class="h-64 overflow-hidden bg-gray-100 flex items-center justify-center p-4"
+                >
+                    <Image
+                        src={synegoImg}
+                        alt="Synego"
+                        class="w-auto h-full object-contain transform group-hover:scale-110 transition-transform duration-500"
+                    />
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold mb-2 text-gray-800">
+                        Synego
+                    </h3>
+                    <p class="text-gray-600">
+                        Isolamento termico superiore e sicurezza per la tua
+                        casa.
+                    </p>
+                </div>
+            </div>
+
+            <div
+                class="group relative bg-white rounded-2xl shadow-xl overflow-hidden transform hover:-translate-y-2 transition-all duration-300 fade-in"
+                data-observer
+            >
+                <div
+                    class="h-64 overflow-hidden bg-gray-100 flex items-center justify-center p-4"
+                >
+                    <Image
+                        src={synegoScorrevoliImg}
+                        alt="Synego Scorrevoli"
+                        class="w-auto h-full object-contain transform group-hover:scale-110 transition-transform duration-500"
+                    />
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold mb-2 text-gray-800">
+                        Synego Scorrevoli
+                    </h3>
+                    <p class="text-gray-600">
+                        Grandi aperture, luce naturale e scorrimento fluido.
+                    </p>
+                </div>
+            </div>
+
+            <div
+                class="group relative bg-white rounded-2xl shadow-xl overflow-hidden transform hover:-translate-y-2 transition-all duration-300 fade-in"
+                data-observer
+            >
+                <div
+                    class="h-64 overflow-hidden bg-gray-100 flex items-center justify-center p-4"
+                >
+                    <Image
+                        src={Euro70Img}
+                        alt="Euro 70"
+                        class="w-auto h-full object-contain transform group-hover:scale-110 transition-transform duration-500"
+                    />
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold mb-2 text-gray-800">
+                        Euro 70
+                    </h3>
+                    <p class="text-gray-600">
+                        La scelta versatile per ogni tipo di architettura.
+                    </p>
+                </div>
+            </div>
+
+            <div
+                class="group relative bg-white rounded-2xl shadow-xl overflow-hidden transform hover:-translate-y-2 transition-all duration-300 fade-in"
+                data-observer
+            >
+                <div
+                    class="h-64 overflow-hidden bg-gray-100 flex items-center justify-center p-4"
+                >
+                    <Image
+                        src={portonciniImg}
+                        alt="Portoncini"
+                        class="w-auto h-full object-contain transform group-hover:scale-110 transition-transform duration-500"
+                    />
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold mb-2 text-gray-800">
+                        Portoncini
+                    </h3>
+                    <p class="text-gray-600">
+                        Accoglienza sicura e design raffinato per l'ingresso.
+                    </p>
+                </div>
+            </div>
+
+            <div
+                class="group relative bg-white rounded-2xl shadow-xl overflow-hidden transform hover:-translate-y-2 transition-all duration-300 fade-in"
+                data-observer
+            >
+                <div
+                    class="h-64 overflow-hidden bg-gray-100 flex items-center justify-center p-4"
+                >
+                    <Image
+                        src={oscuranteImg}
+                        alt="Oscurante Cassonetto"
+                        class="w-auto h-full object-contain transform group-hover:scale-110 transition-transform duration-500"
+                    />
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold mb-2 text-gray-800">
+                        Sistemi Oscuranti
+                    </h3>
+                    <p class="text-gray-600">
+                        Cassonetti e soluzioni per il controllo della luce.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Lightbox Modal -->
+<div
+    id="image-modal"
+    class="fixed inset-0 z-[100] hidden bg-black/95 overflow-y-auto transition-opacity duration-300 opacity-0"
+    onclick="closeModal()"
+>
+    <div class="min-h-screen flex p-4 md:p-8">
+        <button
+            class="fixed top-6 right-6 text-white hover:text-gray-300 z-50 p-2 bg-black/50 rounded-full transition-colors"
+            onclick="closeModal()"
+        >
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-8 w-8"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+            >
+                <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+        </button>
+        <img
+            id="modal-image"
+            src=""
+            alt="Ingrandimento"
+            class="w-full max-w-5xl h-auto object-contain bg-white rounded-lg shadow-2xl transform scale-95 transition-transform duration-300 cursor-default m-auto"
+            onclick="event.stopPropagation()"
+        />
+    </div>
+</div>
+
+<style>
+    .fade-in {
+        opacity: 0;
+        transform: translateY(20px);
+        transition:
+            opacity 0.6s ease-out,
+            transform 0.6s ease-out;
+    }
+    .fade-in.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+</style>
+
+<script>
+    const observerOptions = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.1,
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+            }
+        });
+    }, observerOptions);
+
+    document
+        .querySelectorAll("[data-observer]")
+        .forEach((el) => observer.observe(el));
+
+    // Lightbox functionality
+    const modal = document.getElementById("image-modal");
+    const modalImg = document.getElementById("modal-image") as HTMLImageElement;
+
+    // Make functions global for inline onclick handlers if needed
+    (window as any).openModal = function (src: string) {
+        if (!modal || !modalImg) return;
+        modal.classList.remove("hidden");
+        // Force reflow
+        void modal.offsetWidth;
+        modal.classList.remove("opacity-0");
+        modalImg.src = src;
+        modalImg.classList.remove("scale-95");
+        modalImg.classList.add("scale-100");
+        document.body.style.overflow = "hidden";
+    };
+
+    (window as any).closeModal = function () {
+        if (!modal || !modalImg) return;
+        modal.classList.add("opacity-0");
+        modalImg.classList.remove("scale-100");
+        modalImg.classList.add("scale-95");
+        setTimeout(() => {
+            modal.classList.add("hidden");
+            modalImg.src = "";
+            document.body.style.overflow = "";
+        }, 300);
+    };
+
+    // Add click listeners to Rehau images
+    document.addEventListener("DOMContentLoaded", () => {
+        const rehauImages = document.querySelectorAll("#rehau img");
+        rehauImages.forEach((img) => {
+            (img as HTMLElement).style.cursor = "zoom-in";
+            img.addEventListener("click", (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                (window as any).openModal((img as HTMLImageElement).src);
+            });
+        });
+    });
+
+    // Close on escape key
+    document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") (window as any).closeModal();
+    });
+</script>
