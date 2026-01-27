@@ -1,0 +1,22 @@
+---
+import { posts } from "../../components/Blog.astro";
+import PostLayout from "../../layouts/PostLayout.astro";
+
+export function getStaticPaths() {
+    return posts.map((post) => ({
+        params: { slug: post.slug },
+        props: { post },
+    }));
+}
+
+const { post } = Astro.props;
+---
+
+<PostLayout
+    title={post.title}
+    date={post.date}
+    image={post.image}
+    excerpt={post.excerpt}
+>
+    <Fragment set:html={post.content} />
+</PostLayout>

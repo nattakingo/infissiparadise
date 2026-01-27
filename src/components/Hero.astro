@@ -1,19 +1,37 @@
 ---
 import { Image } from "astro:assets";
-import heroBg from "../assets/hero-bg.jpg";
+import heroBg1 from "../assets/hero-bg.jpg";
+import heroBg2 from "../assets/hero-bg2.jpg";
+import heroBg3 from "../assets/hero-bg3.jpg";
+import heroBg4 from "../assets/hero-bg4.jpg";
+
+const images = [heroBg1, heroBg2, heroBg3, heroBg4];
 ---
 
 <section
     class="relative h-screen flex items-center justify-center overflow-hidden"
 >
-    <!-- Background Image -->
+    <!-- Background Slider -->
     <div class="absolute inset-0 z-0">
-        <Image
-            src={heroBg}
-            alt="Infissi Paradise"
-            class="w-full h-full object-cover"
-            loading="eager"
-        />
+        <div class="slider-container w-full h-full relative">
+            {
+                images.map((img, index) => (
+                    <div
+                        class={`slide absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out ${index === 0 ? "active" : ""}`}
+                        data-index={index}
+                    >
+                        <Image
+                            src={img}
+                            alt={`Infissi Paradise ${index + 1}`}
+                            class="w-full h-full object-cover"
+                            loading="eager"
+                            fetchpriority={index === 0 ? "high" : "auto"}
+                            decoding="async"
+                        />
+                    </div>
+                ))
+            }
+        </div>
         <div
             class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/60"
         >
@@ -37,13 +55,42 @@ import heroBg from "../assets/hero-bg.jpg";
         <p
             class="text-lg md:text-xl lg:text-2xl mb-12 max-w-3xl mx-auto text-gray-200 leading-relaxed"
         >
-            Soluzioni su misura per la tua casa
+            Specialisti nell'installazione di infissi in alluminio e PVC, porte
+            d'ingresso e zanzariere. Qualità garantita e assistenza
+            professionale.
         </p>
         <a
             href="#prodotti"
-            class="hero-button inline-block bg-[#DC2626] hover:bg-red-700 text-white px-12 py-6 rounded-full text-lg md:text-xl font-bold transition-all transform hover:scale-105"
+            class="hero-button inline-block bg-[#339966] hover:bg-[#2d8659] text-white px-12 py-6 rounded-full text-lg md:text-xl font-bold transition-all transform hover:scale-105"
         >
             Scopri i Nostri Prodotti
         </a>
     </div>
 </section>
+
+<style>
+    .slide.active {
+        opacity: 1;
+    }
+</style>
+
+<script>
+    function setupSlider() {
+        const slides = document.querySelectorAll(".slide");
+        let currentSlide = 0;
+
+        if (slides.length === 0) return;
+
+        setInterval(() => {
+            slides[currentSlide].classList.remove("active");
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add("active");
+        }, 5000);
+    }
+
+    // Run on initial load
+    setupSlider();
+
+    // Run on view transition if using them
+    document.addEventListener("astro:after-swap", setupSlider);
+</script>

@@ -2,16 +2,21 @@
 
 /* Colori brand Infissi Paradise */
 :root {
-  --primary: #DC2626;      /* Rosso */
-  --dark: #111827;         /* Grigio scuro */
-  --medium: #374151;       /* Grigio medio */
-  --light: #6B7280;        /* Grigio chiaro */
-  --bgGray: #F9FAFB;       /* Background */
+  --primary: #339966;
+  /* Verde */
+  --dark: #111827;
+  /* Grigio scuro */
+  --medium: #374151;
+  /* Grigio medio */
+  --light: #6B7280;
+  /* Grigio chiaro */
+  --bgGray: #F9FAFB;
+  /* Background */
 }
 
 /* Smooth scroll global */
-html { 
-  scroll-behavior: smooth; 
+html {
+  scroll-behavior: smooth;
 }
 
 /* Animazioni minimali */
@@ -33,12 +38,13 @@ html {
 
 .product-card:hover {
   transform: scale(1.05);
-  box-shadow: 0 10px 25px rgba(220, 38, 38, 0.15);
-  border-color: #DC2626;
+  box-shadow: 0 10px 25px rgba(51, 153, 102, 0.15);
+  border-color: #339966;
 }
 
 /* Navigation backdrop blur */
 .backdrop-blur-sm {
+  -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
 }
 
@@ -49,11 +55,11 @@ html {
 
 /* Enhanced button hover effect */
 .hero-button {
-  box-shadow: 0 10px 25px rgba(220, 38, 38, 0.3);
+  box-shadow: 0 10px 25px rgba(51, 153, 102, 0.3);
 }
 
 .hero-button:hover {
-  box-shadow: 0 15px 35px rgba(220, 38, 38, 0.4);
+  box-shadow: 0 15px 35px rgba(51, 153, 102, 0.4);
 }
 
 

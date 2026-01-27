@@ -1,11 +1,11 @@
 ---
 import { Image } from "astro:assets";
-import teamImg from "../assets/team.jpg";
+import videoMp4 from "../assets/video.mp4";
 ---
 
 <section id="chi-siamo" class="relative z-10 py-24 bg-[#F9FAFB] fade-in">
     <div class="container mx-auto px-4">
-        <h2 class="text-4xl font-bold text-center mb-12 text-[#DC2626]">
+        <h2 class="text-4xl font-bold text-center mb-12 text-[#339966]">
             Chi Siamo
         </h2>
         <div class="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
@@ -26,23 +26,52 @@ import teamImg from "../assets/team.jpg";
                     garantendo risultati che durano nel tempo.
                 </p>
 
+                <p class="text-[#374151] mb-6 leading-relaxed">
+                    Da anni ci occupiamo con passione di infissi e serramenti a
+                    Roma e nel Lazio, ma quello che ci distingue davvero è un
+                    approccio familiare, diretto e trasparente: siamo noi, in
+                    prima persona, a seguirti in ogni fase. Perché nessun
+                    catalogo può sostituire uno sguardo attento e competente.
+                </p>
+
+                <p class="text-[#374151] mb-6 leading-relaxed">
+                    Nel nostro showroom a Roma puoi toccare con mano la qualità
+                    dei nostri infissi in PVC, grate, zanzariere, porte blindate
+                    e tanti altri accessori. E se non puoi venire da noi,
+                    veniamo noi da te.
+                </p>
+
+                <p class="text-[#374151] mb-6 leading-relaxed">
+                    Siamo una vera impresa di famiglia: niente call center,
+                    niente intermediari. Solo noi, al tuo fianco, dalla scelta
+                    del prodotto alla posa in opera, fino all’assistenza post
+                    vendita.
+                </p>
+
+                <p class="text-[#374151] mb-8 leading-relaxed">
+                    Vieni a trovarci o scrivimi: insieme troveremo la soluzione
+                    più adatta ai tuoi spazi e alle tue esigenze. Con Infissi
+                    Paradise, ogni dettaglio conta. E ogni cliente conta ancora
+                    di più.
+                </p>
+
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                     <div class="text-center">
-                        <div class="text-[#DC2626] text-3xl mb-2">✓</div>
+                        <div class="text-[#339966] text-3xl mb-2">✓</div>
                         <h4 class="font-semibold mb-1">Installazione</h4>
                         <p class="text-sm text-[#6B7280]">
                             Professionale e garantita
                         </p>
                     </div>
                     <div class="text-center">
-                        <div class="text-[#DC2626] text-3xl mb-2">✓</div>
+                        <div class="text-[#339966] text-3xl mb-2">✓</div>
                         <h4 class="font-semibold mb-1">Assistenza</h4>
                         <p class="text-sm text-[#6B7280]">
                             Supporto post-vendita
                         </p>
                     </div>
                     <div class="text-center">
-                        <div class="text-[#DC2626] text-3xl mb-2">✓</div>
+                        <div class="text-[#339966] text-3xl mb-2">✓</div>
                         <h4 class="font-semibold mb-1">Sopralluoghi</h4>
                         <p class="text-sm text-[#6B7280]">
                             Preventivi gratuiti
@@ -51,11 +80,16 @@ import teamImg from "../assets/team.jpg";
                 </div>
             </div>
             <div class="relative">
-                <Image
-                    src={teamImg}
-                    alt="Team Infissi Paradise"
+                <video
                     class="rounded-lg shadow-xl w-full"
-                />
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                >
+                    <source src={videoMp4} type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
             </div>
         </div>
     </div>

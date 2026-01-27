@@ -1,12 +1,13 @@
-// @ts-check
 import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
+import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://nattakingo.github.io',
+  site: 'https://infissiparadise.it', // Placeholder, user should update if different
   base: '/infissiparadise',
   vite: {
     plugins: [tailwindcss()],
   },
+  integrations: [sitemap()],
 });
