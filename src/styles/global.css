@@ -2,7 +2,7 @@
 
 /* Colori brand Infissi Paradise */
 :root {
-  --primary: #339966;
+  --primary: #257a4d;
   /* Verde */
   --dark: #111827;
   /* Grigio scuro */
@@ -39,7 +39,7 @@ html {
 .product-card:hover {
   transform: scale(1.05);
   box-shadow: 0 10px 25px rgba(51, 153, 102, 0.15);
-  border-color: #339966;
+  border-color: #257a4d;
 }
 
 /* Navigation backdrop blur */
