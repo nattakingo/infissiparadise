@@ -24,7 +24,7 @@ const images = [heroBg1, heroBg2, heroBg3, heroBg4];
                             src={img}
                             alt={`Infissi Paradise ${index + 1}`}
                             class="w-full h-full object-cover"
-                            loading="eager"
+                            loading={index === 0 ? "eager" : "lazy"}
                             fetchpriority={index === 0 ? "high" : "auto"}
                             decoding="async"
                         />

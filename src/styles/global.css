@@ -69,3 +69,9 @@ html {
   position: relative;
   z-index: 10;
 }
+
+/* Performance optimization */
+section:not(:first-of-type) {
+  content-visibility: auto;
+  contain-intrinsic-size: 1000px;
+}
