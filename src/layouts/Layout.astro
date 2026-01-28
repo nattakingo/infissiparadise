@@ -7,6 +7,13 @@ const {
   description = "Infissi Paradise: soluzioni su misura per infissi in PVC, alluminio, grate di sicurezza, zanzariere, tende da sole e porte blindate",
   image = "/social-image.jpg",
 } = Astro.props;
+
+// Supports weights 100-900
+import "@fontsource/jost/300.css";
+import "@fontsource/jost/400.css";
+import "@fontsource/jost/600.css";
+import "@fontsource/jost/700.css";
+import "@fontsource/jost/900.css";
 ---
 
 <!doctype html>
@@ -39,14 +46,6 @@ const {
     <meta property="twitter:title" content={title} />
     <meta property="twitter:description" content={description} />
     <meta property="twitter:image" content={image} />
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body class="font-['Jost'] text-[#111827] bg-white">
     <!-- Navigation -->
