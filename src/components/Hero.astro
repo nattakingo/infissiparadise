@@ -27,6 +27,8 @@ const images = [heroBg1, heroBg2, heroBg3, heroBg4];
                             loading={index === 0 ? "eager" : "lazy"}
                             fetchpriority={index === 0 ? "high" : "auto"}
                             decoding="async"
+                            quality={60}
+                            format="webp"
                         />
                     </div>
                 ))
