@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="ShowRoom Infissi: il primo ecommerce italiano di serramenti, finestre, porte blindate, persiane e avvolgibili. Qualità Made in Italy, installazione a Roma e provincia.">
+    <meta name="theme-color" content="#4C8A71">
+    <title>ShowRoom Infissi - Il Primo Ecommerce Italiano di Serramenti Porte e Finestre</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Phosphor Icons (Script version for easier use) -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- 1. Announcement Bar -->
+    <div class="announcement-bar">
+        <span>🚚INFISSI E SERRAMENTI A ROMA - TRASPORTO E MONTAGGIO CERTIFICATO INCLUSI</span>
+    </div>
+
+    <!-- 2. Header -->
+    <header class="header" id="main-header">
+        <div class="header-top">
+            <div class="header-container">
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">
+                    <i class="ph ph-list"></i>
+                </button>
+
+                <!-- Search -->
+                <div class="header-search">
+                    <button aria-label="Cerca">
+                        <i class="ph ph-magnifying-glass"></i>
+                    </button>
+                    <!-- Search input hidden by default, can be expanded via JS -->
+                </div>
+
+                <!-- Logo -->
+                <div class="header-logo">
+                    <a href="index.html">
+                        <img src="logo.png" alt="Infissi Paradise Logo" class="logo-img">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Menu -->
+        <nav class="header-nav">
+            <ul class="nav-list" id="nav-list">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="finestre.html">Finestre e Portefinestre</a></li>
+                <li><a href="porte-blindate.html">Porte Blindate</a></li>
+                <li><a href="persiane.html">Persiane</a></li>
+                <li><a href="avvolgibili.html">Avvolgibili</a></li>
+                <li><a href="cassonetti.html">Cassonetti</a></li>
+                <li><a href="zanzariere.html">Zanzariere</a></li>
+                <li><a href="grate-sicurezza.html">Grate di Sicurezza</a></li>
+                <li><a href="tende-da-sole.html">Tende da Sole</a></li>
+            </ul>
+        </nav>
+
+        <!-- Mobile Overlay -->
+        <div class="nav-overlay" id="nav-overlay"></div>
+    </header>
+
+    <main>
+        <!-- 3. Hero Slider -->
+        <section class="hero-slider">
+            <div class="slides-container" id="slides-container">
+                <!-- Slide 1: Hero Video -->
+                <div class="slide active">
+                    <video autoplay muted loop playsinline x-webkit-airplay="allow" preload="metadata"
+                        class="slide-video"
+                        poster="https://images.unsplash.com/photo-1505691938895-1758d7feb511?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80">
+                        <source src="hero.mp4" type="video/mp4">
+                        <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
+                            alt="Finestre e Portefinestre" class="slide-img" loading="lazy" decoding="async">
+                        Il tuo browser non supporta il formato video.
+                    </video>
+
+                    <!-- Reference-style Layout Overlay -->
+                    <div class="hero-content-overlay">
+                        <div class="container container-hero">
+                            <div class="hero-content-left">
+                                <h1 class="hero-title">Serramenti <br><span class="mint-green">di Precisione</span></h1>
+                                <p class="hero-desc">Finestre e infissi su misura, tempi certi
+                                    qualità certificata e risultati che durano nel tempo. Con sede a Roma, operiamo con
+                                    rapidità in tutta la provincia</p>
+
+                                <div class="hero-btns">
+                                    <a href="https://wa.me/393396992947" class="btn btn-whatsapp"><i
+                                            class="ph ph-whatsapp-logo"></i> Scrivici su WhatsApp</a>
+                                    <a href="contatti.html" class="btn btn-outline-white"><i
+                                            class="ph ph-chat-circle-dots"></i>
+                                        Preventivo Express</a>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Company Intro Section -->
+        <section class="company-intro scroll-reveal">
+            <div class="container text-center">
+                <h2 class="intro-title">INFISSI PARADISE</h2>
+                <h3 class="intro-subtitle">SERRAMENTI & TECNOLOGIE PER L'EDILIZIA</h3>
+
+                <div class="flag-circles">
+                    <span class="circle-green"></span>
+                    <span class="circle-white"></span>
+                    <span class="circle-red"></span>
+                </div>
+
+                <div class="intro-description">
+                    <p><strong>Infissi Paradise</strong> è un'azienda fondata su un team produttore di porte e finestre
+                        dal 1992. Le caratteristiche che contraddistinguono il gruppo sono un reparto tecnico di
+                        <strong>ricerca e progettazione</strong> personalizzata di sistemi per porte e finestre e una
+                        produzione completa in tutti gli ambiti degli infissi, merceologici: <strong>legno alluminio,
+                            alluminio legno, alluminio legno taglio termico alluminio e pvc</strong>; e tipologici:
+                        <strong>Finestre, Porte-finestre, Portoncini, Vetrine, Vetro facciate</strong>.
+                    </p>
+                </div>
+
+                <div class="intro-action">
+                    <a href="#" class="btn btn-outline-dark">AZIENDA</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Sezioni Prodotto Alternate -->
+        <section class="alternating-sections">
+            <!-- Sezione 1: Img Sinistra / Testo Destra -->
+            <div class="product-split-section bg-alt scroll-reveal">
+                <div class="split-image">
+                    <img loading="lazy" decoding="async" src="immaginiHome/finestre.jpg" alt="Finestre e Portefinestre">
+                </div>
+                <div class="split-content">
+                    <div class="content-wrapper">
+                        <span class="badge">Made in Italy</span>
+                        <h2>🪟 Finestre e Portefinestre</h2>
+                        <p>Infissi certificati per le nuove normative sul risparmio energetico. Serramenti in PVC,
+                            Alluminio, Legno e Legno/Alluminio progettati per garantirti isolamento termico e acustico
+                            ai massimi livelli.</p>
+                        <a href="finestre.html" class="btn btn-primary">Scopri i prodotti</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sezione 2: Testo Sinistra / Img Destra -->
+            <div class="product-split-section row-reverse bg-white scroll-reveal">
+                <div class="split-image">
+                    <img loading="lazy" decoding="async" src="immaginiHome/porteblindate.jpg" alt="Porte Blindate">
+                </div>
+                <div class="split-content">
+                    <div class="content-wrapper">
+                        <span class="badge">Sicurezza Certificata</span>
+                        <h2>🚪 Porte Blindate</h2>
+                        <p>Massima sicurezza e design per la tua casa. Le nostre porte blindate offrono protezione
+                            avanzata combinata a un'estetica raffinata, perfette per inserirsi in ogni contesto
+                            abitativo.</p>
+                        <a href="porte-blindate.html" class="btn btn-primary">Scopri le porte</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sezione 3: Img Sinistra / Testo Destra -->
+            <div class="product-split-section bg-alt scroll-reveal">
+                <div class="split-image">
+                    <img loading="lazy" decoding="async" src="immaginiHome/persiane.webp" alt="Persiane">
+                </div>
+                <div class="split-content">
+                    <div class="content-wrapper">
+                        <span class="badge">Estetica e Protezione</span>
+                        <h2>🪟 Persiane</h2>
+                        <p>Sicurezza, estetica e protezione dagli agenti atmosferici. Scegli tra la nostra gamma di
+                            persiane in legno dallo stile classico, in alluminio moderne o in ferro blindate per la
+                            massima sicurezza.</p>
+                        <a href="persiane.html" class="btn btn-primary">Esplora la gamma</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sezione 4: Testo Sinistra / Img Destra -->
+            <div class="product-split-section row-reverse bg-white scroll-reveal">
+                <div class="split-image">
+                    <img loading="lazy" decoding="async" src="immaginiHome/avvolgibili.jpg" alt="Avvolgibili">
+                </div>
+                <div class="split-content">
+                    <div class="content-wrapper">
+                        <span class="badge">Isolamento Termico</span>
+                        <h2>🌀 Avvolgibili</h2>
+                        <p>Oscuramento perfetto, sicurezza aggiuntiva e isolamento climatico. I nostri avvolgibili sono
+                            disponibili in PVC, Alluminio Coibentato e Acciaio per soddisfare ogni necessità della tua
+                            abitazione.</p>
+                        <a href="avvolgibili.html" class="btn btn-primary">Vedi i modelli</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sezione 5: Img Sinistra / Testo Destra -->
+            <div class="product-split-section bg-alt scroll-reveal">
+                <div class="split-image">
+                    <img loading="lazy" decoding="async" src="immaginiHome/zanzariere.jpg" alt="Zanzariere">
+                </div>
+                <div class="split-content">
+                    <div class="content-wrapper">
+                        <span class="badge">Protezione e Comfort</span>
+                        <h2>🦟 Zanzariere</h2>
+                        <p>Protezione contro insetti e pollini per un ambiente salubre. Disponibili in vari modelli: a
+                            rullo, plissettate, fisse o magnetiche per adattarsi a ogni finestra e porta-finestra.</p>
+                        <a href="zanzariere.html" class="btn btn-primary">Scopri le zanzariere</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Partners Section -->
+        <section class="partners-section scroll-reveal">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="partners-title">I Nostri Partner</h2>
+                    <p class="partners-subtitle">Collaboriamo esclusivamente con i migliori brand europei per garantire
+                        qualità, innovazione e affidabilità in ogni progetto.</p>
+                </div>
+                <div class="partners-grid">
+                    <!-- Partner 1 -->
+                    <div class="partner-card">
+                        <div class="partner-logo-box" data-initial="R">
+                            <img loading="lazy" decoding="async" src="loghi/rehau.png" alt="REHAU Logo"
+                                class="brand-logo"
+                                onerror="this.style.display='none';this.parentNode.classList.add('logo-fallback')">
+                        </div>
+                        <h3>REHAU</h3>
+                        <p>Leader europeo in soluzioni innovative per serramenti in PVC</p>
+                    </div>
+
+                    <!-- Partner 2 -->
+                    <div class="partner-card">
+                        <div class="partner-logo-box" data-initial="S">
+                            <img loading="lazy" decoding="async" src="loghi/schuco.png" alt="SCHÜCO Logo"
+                                class="brand-logo"
+                                onerror="this.style.display='none';this.parentNode.classList.add('logo-fallback')">
+                        </div>
+                        <h3>SCHÜCO</h3>
+                        <p>Eccellenza tedesca in sistemi di finestre e facciate in alluminio</p>
+                    </div>
+
+                    <!-- Partner 3 -->
+                    <div class="partner-card">
+                        <div class="partner-logo-box" data-initial="V">
+                            <img loading="lazy" decoding="async" src="loghi/veka.png" alt="VEKA Logo" class="brand-logo"
+                                onerror="this.style.display='none';this.parentNode.classList.add('logo-fallback')">
+                        </div>
+                        <h3>VEKA</h3>
+                        <p>Qualità e innovazione nel settore dei profili in PVC</p>
+                    </div>
+
+                    <!-- Partner 4 -->
+                    <div class="partner-card">
+                        <div class="partner-logo-box" data-initial="S">
+                            <img loading="lazy" decoding="async" src="loghi/salamander.png" alt="SALAMANDER Logo"
+                                class="brand-logo"
+                                onerror="this.style.display='none';this.parentNode.classList.add('logo-fallback')">
+                        </div>
+                        <h3>SALAMANDER</h3>
+                        <p>Tecnologie avanzate per serramenti ad alte prestazioni</p>
+                    </div>
+
+                    <!-- Partner 5 (Replaced) -->
+                    <div class="partner-card">
+                        <div class="partner-logo-box" data-initial="T">
+                            <img loading="lazy" decoding="async" src="loghi/tempotest.png" alt="TEMPOTEST Logo"
+                                class="brand-logo"
+                                onerror="this.style.display='none';this.parentNode.classList.add('logo-fallback')">
+                        </div>
+                        <h3>TEMPOTEST</h3>
+                        <p>Leader mondiale nei tessuti per la protezione solare</p>
+                    </div>
+
+                    <!-- Partner 6 (Replaced) -->
+                    <div class="partner-card">
+                        <div class="partner-logo-box" data-initial="M">
+                            <img loading="lazy" decoding="async" src="loghi/mottura.png" alt="MOTTURA Logo"
+                                class="brand-logo"
+                                onerror="this.style.display='none';this.parentNode.classList.add('logo-fallback')">
+                        </div>
+                        <h3>MOTTURA</h3>
+                        <p>Sistemi di sicurezza e serrature d'eccellenza per la casa</p>
+                    </div>
+
+                    <!-- Partner 7 (Replaced) -->
+                    <div class="partner-card">
+                        <div class="partner-logo-box" data-initial="G">
+                            <img loading="lazy" decoding="async" src="loghi/Genius.png" alt="GENIUS Logo"
+                                class="brand-logo"
+                                onerror="this.style.display='none';this.parentNode.classList.add('logo-fallback')">
+                        </div>
+                        <h3>GENIUS</h3>
+                        <p>Soluzioni innovative per sistemi zanzariere di alta qualità</p>
+                    </div>
+
+                    <!-- Partner 8 -->
+                    <div class="partner-card">
+                        <div class="partner-logo-box" data-initial="SG">
+                            <img loading="lazy" decoding="async" src="loghi/Saint_Gobain.png" alt="SAINT-GOBAIN Logo"
+                                class="brand-logo"
+                                onerror="this.style.display='none';this.parentNode.classList.add('logo-fallback')">
+                        </div>
+                        <h3>SAINT-GOBAIN</h3>
+                        <p>Leader mondiale in vetri ad alte prestazioni</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Sezione Blog/Guide -->
+        <section class="blog-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Guida alla Casa Ideale: Infissi, Sicurezza, Porte e Detrazioni</h2>
+                </div>
+                <div class="blog-grid">
+                    <!-- Card 1 -->
+                    <a href="#" class="blog-card">
+                        <div class="blog-img-wrapper">
+                            <img loading="lazy" decoding="async" src="blog/bonussicurezza.jpg" alt="Bonus Sicurezza">
+                            <div class="blog-date">28 maggio 2025</div>
+                        </div>
+                        <div class="blog-content">
+                            <h3>Bonus Sicurezza 2025: Detrazione 50% per Infissi</h3>
+                            <p>Vivere in una casa sicura è una priorità. Con il Bonus Sicurezza 2025 puoi rendere la tua
+                                abitazione più protetta usufruendo delle agevolazioni.</p>
+                        </div>
+                    </a>
+
+                    <!-- Card 2 -->
+                    <a href="#" class="blog-card">
+                        <div class="blog-img-wrapper">
+                            <img loading="lazy" decoding="async" src="blog/porteinterne.webp" alt="Porte Interne">
+                            <div class="blog-date">15 aprile 2025</div>
+                        </div>
+                        <div class="blog-content">
+                            <h3>Come Scegliere le Porte Interne: Aperture e Misure</h3>
+                            <p>Valutare gli spazi è essenziale. Scopri le differenze tra porte a battente, scorrevoli e
+                                a libro e impara come prendere le misure corrette.</p>
+                        </div>
+                    </a>
+
+                    <!-- Card 3 -->
+                    <a href="#" class="blog-card">
+                        <div class="blog-img-wrapper">
+                            <img loading="lazy" decoding="async" src="blog/ecobonus.jpg" alt="Ecobonus">
+                            <div class="blog-date">02 marzo 2025</div>
+                        </div>
+                        <div class="blog-content">
+                            <h3>Ecobonus 50%: Detrazione Fiscale per infissi</h3>
+                            <p>Sostituire i vecchi infissi non è solo una scelta estetica, ma un investimento
+                                intelligente per tagliare i costi in bolletta. Guida all'Ecobonus.</p>
+                        </div>
+                    </a>
+
+                    <!-- Card 4 -->
+                    <a href="#" class="blog-card">
+                        <div class="blog-img-wrapper">
+                            <img loading="lazy" decoding="async" src="blog/guidainfissi.jpg" alt="Guida Infissi">
+                            <div class="blog-date">20 gennaio 2025</div>
+                        </div>
+                        <div class="blog-content">
+                            <h3>Guida alla Scelta: Quali materiali per i tuoi infissi?</h3>
+                            <p>PVC, Alluminio o Legno? Analizziamo pro e contro di ogni materiale per aiutarti a
+                                scegliere gli infissi perfetti per il tuo clima e il tuo stile.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Newsletter -->
+        <section class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-content">
+                    <div class="newsletter-icon">📬</div>
+                    <h2>Iscriviti alla nostra newsletter</h2>
+                    <p>Sarai il primo a conoscere i nuovi prodotti, le promozioni e le agevolazioni fiscali.</p>
+                    <form class="newsletter-form" action="#" method="POST">
+                        <input type="email" placeholder="Inserisci il tuo indirizzo email..." required>
+                        <button type="submit" class="btn btn-secondary">Iscriviti Ora</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 7. Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Info Azienda -->
+                <div class="footer-col brand-col">
+                    <div class="footer-logo">
+                        <img src="logo.png" alt="Infissi Paradise Logo" class="logo-img">
+                    </div>
+                    <p class="company-desc">Il primo ecommerce in Italia specializzato nella vendita online di infissi,
+                        porte e sistemi di sicurezza di alta qualità dal design Made in Italy.</p>
+                    <ul class="contact-list">
+                        <li><i class="ph ph-envelope-simple"></i> nattaking@me.com</li>
+                        <li><i class="ph ph-phone"></i> +39 339 699 2947</li>
+                        <li><i class="ph ph-map-pin"></i> Via Roma 123, 00100 Roma (RM)</li>
+                    </ul>
+                </div>
+
+                <!-- Categorie -->
+                <div class="footer-col">
+                    <h3>Prodotti</h3>
+                    <ul class="footer-links">
+                        <li><a href="finestre.html">Finestre e Portefinestre</a></li>
+                        <li><a href="porte-blindate.html">Porte Blindate</a></li>
+                        <li><a href="persiane.html">Persiane</a></li>
+                        <li><a href="avvolgibili.html">Avvolgibili</a></li>
+                        <li><a href="cassonetti.html">Cassonetti</a></li>
+                        <li><a href="zanzariere.html">Zanzariere</a></li>
+                        <li><a href="grate-sicurezza.html">Grate di Sicurezza</a></li>
+                        <li><a href="tende-da-sole.html">Tende da Sole</a></li>
+                    </ul>
+                </div>
+
+                <!-- Informazioni -->
+                <div class="footer-col">
+                    <h3>Informazioni</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Chi Siamo</a></li>
+                        <li><a href="#">Installatori Partner</a></li>
+                        <li><a href="#">Spedizioni e Consegne</a></li>
+                        <li><a href="#">Informativa sui rimborsi</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Termini di Servizio</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social -->
+                <div class="footer-col">
+                    <h3>Seguici</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="ph ph-facebook-logo"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="ph ph-youtube-logo"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Showroom Infissi - P.IVA 12345678901. Tutti i diritti riservati.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="main.js"></script>
+</body>
+
+</html>

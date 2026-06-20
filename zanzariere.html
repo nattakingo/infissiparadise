@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#4C8A71">
+    <meta name="description"
+        content="Zanzariere a rullo, plissettate, fisse e magnetiche per finestre e portefinestre. Protezione da insetti e pollini. Installazione a Roma.">
+    <title>Zanzariere | ShowRoom Infissi</title>
+    <!-- Google Fonts Sync -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="announcement-bar">
+        <span>IL NOSTRO PRIMO ECOMMERCE DI SERRAMENTI PORTE E FINESTRE</span>
+    </div>
+
+    <header class="header" id="main-header">
+        <div class="header-top">
+            <div class="header-container">
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">
+                    <i class="ph ph-list"></i>
+                </button>
+                <div class="header-search">
+                    <button aria-label="Cerca">
+                        <i class="ph ph-magnifying-glass"></i>
+                    </button>
+                </div>
+                <div class="header-logo">
+                    <a href="index.html">
+                        <img src="logo.png" alt="Infissi Paradise Logo" class="logo-img">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <nav class="header-nav">
+            <ul class="nav-list" id="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="finestre.html">Finestre e Portefinestre</a></li>
+                <li><a href="porte-blindate.html">Porte Blindate</a></li>
+                <li><a href="persiane.html">Persiane</a></li>
+                <li><a href="avvolgibili.html">Avvolgibili</a></li>
+                <li><a href="cassonetti.html">Cassonetti</a></li>
+                <li><a href="zanzariere.html" class="active">Zanzariere</a></li>
+                <li><a href="grate-sicurezza.html">Grate di Sicurezza</a></li>
+                <li><a href="tende-da-sole.html">Tende da Sole</a></li>
+            </ul>
+        </nav>
+        <div class="nav-overlay" id="nav-overlay"></div>
+    </header>
+
+    <!-- Inline styles for zanzariere page -->
+    <style>
+        .sp-hero {
+            position: relative;
+            background: #ffffff;
+            border-bottom: 1px solid #E5E7EB;
+            min-height: 280px;
+            display: flex;
+            align-items: flex-end;
+            padding-bottom: 3rem;
+            overflow: hidden;
+        }
+
+        .sp-hero::before {
+            display: none;
+        }
+
+        .sp-hero .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .sp-hero .sp-breadcrumb {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            margin-bottom: 1rem;
+        }
+
+        .sp-hero .sp-breadcrumb a {
+            color: var(--text-muted);
+            text-decoration: none;
+        }
+
+        .sp-hero .sp-breadcrumb a:hover {
+            color: var(--primary);
+        }
+
+        .sp-hero h1 {
+            color: var(--text-main);
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 800;
+            margin: 0 0 0.6rem;
+        }
+
+        .sp-hero p {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+            max-width: 580px;
+            margin: 0;
+        }
+
+        /* Dark content area */
+        .sp-content {
+            background: #111827;
+            padding: 4rem 0 5rem;
+        }
+
+        /* Feature highlights */
+        .sp-why {
+            text-align: center;
+            margin-bottom: 3.5rem;
+        }
+
+        .sp-why h2 {
+            color: #fff;
+            font-size: clamp(1.5rem, 3vw, 2.2rem);
+            font-weight: 700;
+            margin-bottom: 0.6rem;
+        }
+
+        .sp-why .sp-why-sub {
+            color: rgba(255, 255, 255, 0.55);
+            max-width: 560px;
+            margin: 0 auto 2.5rem;
+            font-size: 0.95rem;
+        }
+
+        .sp-features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.25rem;
+        }
+
+        @media(max-width:720px) {
+            .sp-features-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .sp-feature-card {
+            background: #1e2d3d;
+            border-radius: 14px;
+            padding: 1.75rem 1.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .sp-feature-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
+        }
+
+        .sp-feature-icon {
+            font-size: 2rem;
+            color: #4ade80;
+            margin-bottom: 1rem;
+        }
+
+        .sp-feature-card h3 {
+            color: #fff;
+            font-size: 1rem;
+            font-weight: 700;
+            margin: 0 0 0.5rem;
+        }
+
+        .sp-feature-card p {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.85rem;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        /* Divider */
+        .sp-divider {
+            border: none;
+            border-top: 1px solid rgba(255, 255, 255, 0.07);
+            margin: 3rem 0;
+        }
+
+        /* Product type cards */
+        .sp-types {
+            margin-bottom: 3.5rem;
+        }
+
+        .sp-section-label {
+            color: #4ade80;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 0.6rem;
+        }
+
+        .sp-section-title {
+            color: #fff;
+            font-size: clamp(1.4rem, 2.5vw, 2rem);
+            font-weight: 700;
+            margin: 0 0 2rem;
+        }
+
+        .sp-types-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.25rem;
+        }
+
+        @media(max-width:640px) {
+            .sp-types-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .sp-type-card {
+            background: #1e2d3d;
+            border-radius: 14px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sp-type-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
+        }
+
+        .sp-type-img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .sp-type-body {
+            padding: 1.25rem;
+        }
+
+        .sp-type-body h3 {
+            color: #fff;
+            font-size: 1.05rem;
+            font-weight: 700;
+            margin: 0 0 0.5rem;
+        }
+
+        .sp-type-body p {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.85rem;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* FAQ */
+        .sp-faq .sp-section-title {
+            margin-bottom: 1.5rem;
+        }
+
+        .sp-faq-item {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .sp-faq-question {
+            width: 100%;
+            background: none;
+            border: none;
+            text-align: left;
+            color: #fff;
+            font-size: 0.95rem;
+            font-weight: 600;
+            padding: 1.1rem 0;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .sp-faq-question i {
+            color: #4ade80;
+            flex-shrink: 0;
+            font-size: 1.1rem;
+        }
+
+        .sp-faq-answer {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.88rem;
+            line-height: 1.7;
+            padding-bottom: 1rem;
+        }
+    </style>
+
+    <main>
+        <!-- Hero -->
+        <section class="sp-hero">
+            <div class="container">
+                <nav class="sp-breadcrumb" aria-label="Breadcrumb">
+                    <a href="index.html">Home</a>
+                    <span>→</span>
+                    <a href="zanzariere.html">Zanzariere</a>
+                </nav>
+                <h1>Zanzariere su Misura</h1>
+                <p>Proteggi la tua casa da insetti con zanzariere resistenti e funzionali. Installazione rapida e su
+                    misura.</p>
+            </div>
+        </section>
+
+        <!-- Main content -->
+        <section class="sp-content">
+            <div class="container">
+
+                <!-- Perché Scegliere Noi -->
+                <div class="sp-why">
+                    <h2>Perché Scegliere Noi</h2>
+                    <p class="sp-why-sub">Offriamo soluzioni su misura con materiali di alta qualità e installazione
+                        professionale per ogni tipo di apertura.</p>
+                    <div class="sp-features-grid">
+                        <div class="sp-feature-card">
+                            <div class="sp-feature-icon"><i class="ph ph-hand-tap"></i></div>
+                            <h3>Facilità d'uso</h3>
+                            <p>Sistemi di apertura fluidi e intuitivi, adatti a tutta la famiglia.</p>
+                        </div>
+                        <div class="sp-feature-card">
+                            <div class="sp-feature-icon"><i class="ph ph-shield-check"></i></div>
+                            <h3>Materiali resistenti</h3>
+                            <p>Reti e profili in alluminio di alta qualità, anti-corrosione e duraturi.</p>
+                        </div>
+                        <div class="sp-feature-card">
+                            <div class="sp-feature-icon"><i class="ph ph-ruler"></i></div>
+                            <h3>Installazione su misura</h3>
+                            <p>Ogni zanzariera è progettata e realizzata esattamente per il tuo spazio.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="sp-divider">
+
+                <!-- Tipi di zanzariere -->
+                <div class="sp-types">
+                    <p class="sp-section-label">I Nostri Prodotti</p>
+                    <h2 class="sp-section-title">Soluzioni Su Misura</h2>
+                    <div class="sp-types-grid">
+
+                        <div class="sp-type-card">
+                            <img class="sp-type-img"
+                                src="immaginiZanzariere/zanzarieraVerticale.webp"
+                                alt="Zanzariere a Rullo" loading="lazy" decoding="async">
+                            <div class="sp-type-body">
+                                <h3>Zanzariere a Rullo</h3>
+                                <p>La soluzione più classica e versatile: la rete si riavvolge in un cassonetto
+                                    superiore quando non viene utilizzata, mantenendo l'estetica della finestra.</p>
+                            </div>
+                        </div>
+
+                        <div class="sp-type-card">
+                            <img class="sp-type-img"
+                                src="immaginiZanzariere/zanzarieraPlissettata.webp"
+                                alt="Zanzariere Plissettate" loading="lazy" decoding="async">
+                            <div class="sp-type-body">
+                                <h3>Zanzariere Plissettate</h3>
+                                <p>Ideali per passaggi frequenti: la rete si apre a fisarmonica senza binario a terra,
+                                    con ingombro minimo e massima praticità d'uso quotidiano.</p>
+                            </div>
+                        </div>
+
+                        <div class="sp-type-card">
+                            <img class="sp-type-img"
+                                src="immaginiZanzariere/zanzarieraScorrevoli.jpg"
+                                alt="Zanzariere Scorrevoli" loading="lazy" decoding="async">
+                            <div class="sp-type-body">
+                                <h3>Zanzariere Scorrevoli</h3>
+                                <p>Perfette per grandi vetrate e portefinestre: garantiscono stabilità e fluidità di
+                                    movimento anche su superfici molto ampie.</p>
+                            </div>
+                        </div>
+
+                        <div class="sp-type-card">
+                            <img class="sp-type-img"
+                                src="immaginiZanzariere/zanzarieraFissaBattente.jpg"
+                                alt="Zanzariere Fisse o a Battente" loading="lazy" decoding="async">
+                            <div class="sp-type-body">
+                                <h3>Zanzariere Fisse o a Battente</h3>
+                                <p>Progettate per finestre o porte che richiedono una protezione permanente, con la
+                                    robustezza necessaria per ambienti esposti.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <hr class="sp-divider">
+
+                <!-- Gallery Section -->
+                <div class="gallery-section">
+                    <p class="sp-section-label">Portfolio</p>
+                    <h2 class="sp-section-title">Le Nostre Installazioni</h2>
+                    <div class="gallery-grid">
+                        <div class="gallery-item"><img src="immaginiZanzariere/foto/IMG_5885.jpg" alt="Zanzariera 1" loading="lazy" decoding="async"></div>
+                        <div class="gallery-item"><img src="immaginiZanzariere/foto/IMG_5886.jpg" alt="Zanzariera 2" loading="lazy" decoding="async"></div>
+                        <div class="gallery-item"><img src="immaginiZanzariere/foto/IMG_5888.jpg" alt="Zanzariera 3" loading="lazy" decoding="async"></div>
+                        <div class="gallery-item"><img src="immaginiZanzariere/foto/IMG_5889.jpg" alt="Zanzariera 4" loading="lazy" decoding="async"></div>
+                        <div class="gallery-item"><img src="immaginiZanzariere/foto/IMG_5890.jpg" alt="Zanzariera 5" loading="lazy" decoding="async"></div>
+                        <div class="gallery-item"><img src="immaginiZanzariere/foto/IMG_5891.jpg" alt="Zanzariera 6" loading="lazy" decoding="async"></div>
+                        <div class="gallery-item"><img src="immaginiZanzariere/foto/IMG_5892.jpg" alt="Zanzariera 7" loading="lazy" decoding="async"></div>
+                        <div class="gallery-item"><img src="immaginiZanzariere/foto/IMG_5893.jpg" alt="Zanzariera 8" loading="lazy" decoding="async"></div>
+                        <div class="gallery-item"><img src="immaginiZanzariere/foto/IMG_5894.jpg" alt="Zanzariera 9" loading="lazy" decoding="async"></div>
+                        <div class="gallery-item"><img src="immaginiZanzariere/foto/IMG_5895.jpg" alt="Zanzariera 10" loading="lazy" decoding="async"></div>
+                        <div class="gallery-item"><img src="immaginiZanzariere/foto/IMG_5896.jpg" alt="Zanzariera 11" loading="lazy" decoding="async"></div>
+                        <div class="gallery-item"><img src="immaginiZanzariere/foto/IMG_5897.jpg" alt="Zanzariera 12" loading="lazy" decoding="async"></div>
+                    </div>
+                </div>
+
+                <hr class="sp-divider">
+
+                <!-- FAQ -->
+                <div class="sp-faq">
+                    <p class="sp-section-label">Domande Frequenti</p>
+                    <h2 class="sp-section-title">Sulle Zanzariere</h2>
+
+                    <div class="sp-faq-item">
+                        <div class="sp-faq-question">
+                            <span>Quali tipi di zanzariere esistono?</span>
+                            <i class="ph ph-plus-circle"></i>
+                        </div>
+                        <div class="sp-faq-answer">A rullo, plissettate, scorrevoli, fisse e a battente. Ogni tipologia
+                            si adatta a diversi tipi di apertura e frequenza d'uso.</div>
+                    </div>
+
+                    <div class="sp-faq-item">
+                        <div class="sp-faq-question">
+                            <span>Le zanzariere si possono installare anche su grandi vetrate?</span>
+                            <i class="ph ph-plus-circle"></i>
+                        </div>
+                        <div class="sp-faq-answer">Sì, sono disponibili soluzioni scorrevoli e plissettate progettate
+                            appositamente per superfici ampie come portefinestre e vetrate panoramiche.</div>
+                    </div>
+
+                    <div class="sp-faq-item">
+                        <div class="sp-faq-question">
+                            <span>Qual è la durata media di una zanzariera?</span>
+                            <i class="ph ph-plus-circle"></i>
+                        </div>
+                        <div class="sp-faq-answer">Con materiali resistenti e corretta manutenzione, le zanzariere
+                            superano i 10 anni di utilizzo anche con un uso quotidiano intensivo.</div>
+                    </div>
+
+                    <div class="sp-faq-item">
+                        <div class="sp-faq-question">
+                            <span>Si possono sostituire solo le reti?</span>
+                            <i class="ph ph-plus-circle"></i>
+                        </div>
+                        <div class="sp-faq-answer">Sì, in caso di usura o danneggiamento è possibile cambiare la sola
+                            rete senza dover sostituire l'intera struttura del telaio.</div>
+                    </div>
+
+                    <div class="sp-faq-item">
+                        <div class="sp-faq-question">
+                            <span>Le zanzariere bloccano anche la polvere o il polline?</span>
+                            <i class="ph ph-plus-circle"></i>
+                        </div>
+                        <div class="sp-faq-answer">Alcuni modelli specifici sono dotati di reti con maglie più fitte
+                            progettate per ridurre sensibilmente l'ingresso di polvere fine e pollini.</div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Info Azienda -->
+                <div class="footer-col brand-col">
+                    <div class="footer-logo">
+                        <img src="logo.png" alt="Infissi Paradise Logo" class="logo-img">
+                    </div>
+                    <p class="company-desc">Il primo ecommerce in Italia specializzato nella vendita online di infissi,
+                        porte e sistemi di sicurezza di alta qualità dal design Made in Italy.</p>
+                    <ul class="contact-list">
+                        <li><i class="ph ph-envelope-simple"></i> nattaking@me.com</li>
+                        <li><i class="ph ph-phone"></i> +39 339 699 2947</li>
+                        <li><i class="ph ph-map-pin"></i> Via Roma 123, 00100 Roma (RM)</li>
+                    </ul>
+                </div>
+
+                <!-- Categorie -->
+                <div class="footer-col">
+                    <h3>Prodotti</h3>
+                    <ul class="footer-links">
+                        <li><a href="finestre.html">Finestre e Portefinestre</a></li>
+                        <li><a href="porte-blindate.html">Porte Blindate</a></li>
+                        <li><a href="persiane.html">Persiane</a></li>
+                        <li><a href="avvolgibili.html">Avvolgibili</a></li>
+                        <li><a href="zanzariere.html">Zanzariere</a></li>
+                        <li><a href="grate-sicurezza.html">Grate di Sicurezza</a></li>
+                <li><a href="tende-da-sole.html">Tende da Sole</a></li>
+                    </ul>
+                </div>
+
+                <!-- Informazioni -->
+                <div class="footer-col">
+                    <h3>Informazioni</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Chi Siamo</a></li>
+                        <li><a href="#">Installatori Partner</a></li>
+                        <li><a href="#">Spedizioni e Consegne</a></li>
+                        <li><a href="#">Informativa sui rimborsi</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Termini di Servizio</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social -->
+                <div class="footer-col">
+                    <h3>Seguici</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="ph ph-facebook-logo"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="ph ph-youtube-logo"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Showroom Infissi - P.IVA 12345678901. Tutti i diritti riservati.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
