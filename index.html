@@ -18,7 +18,7 @@
         rel="stylesheet">
 
     <!-- Phosphor Icons (Script version for easier use) -->
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web" defer></script>
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
@@ -51,7 +51,7 @@
                 <!-- Logo -->
                 <div class="header-logo">
                     <a href="index.html">
-                        <img src="logo.png" alt="Infissi Paradise Logo" class="logo-img">
+                        <img src="logo.png" alt="Infissi Paradise Logo" class="logo-img" width="1600" height="900">
                     </a>
                 </div>
             </div>
@@ -86,8 +86,7 @@
                         class="slide-video"
                         poster="https://images.unsplash.com/photo-1505691938895-1758d7feb511?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80">
                         <source src="hero.mp4" type="video/mp4">
-                        <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
-                            alt="Finestre e Portefinestre" class="slide-img" loading="lazy" decoding="async">
+                        <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Finestre e Portefinestre" class="slide-img" fetchpriority="high" decoding="async">
                         Il tuo browser non supporta il formato video.
                     </video>
 
@@ -149,7 +148,7 @@
             <!-- Sezione 1: Img Sinistra / Testo Destra -->
             <div class="product-split-section bg-alt scroll-reveal">
                 <div class="split-image">
-                    <img loading="lazy" decoding="async" src="immaginiHome/finestre.jpg" alt="Finestre e Portefinestre">
+                    <img loading="lazy" decoding="async" src="immaginiHome/finestre.jpg" alt="Finestre e Portefinestre" width="1200" height="643">
                 </div>
                 <div class="split-content">
                     <div class="content-wrapper">
@@ -166,7 +165,7 @@
             <!-- Sezione 2: Testo Sinistra / Img Destra -->
             <div class="product-split-section row-reverse bg-white scroll-reveal">
                 <div class="split-image">
-                    <img loading="lazy" decoding="async" src="immaginiHome/porteblindate.jpg" alt="Porte Blindate">
+                    <img loading="lazy" decoding="async" src="immaginiHome/porteblindate.jpg" alt="Porte Blindate" width="745" height="419">
                 </div>
                 <div class="split-content">
                     <div class="content-wrapper">
@@ -183,7 +182,7 @@
             <!-- Sezione 3: Img Sinistra / Testo Destra -->
             <div class="product-split-section bg-alt scroll-reveal">
                 <div class="split-image">
-                    <img loading="lazy" decoding="async" src="immaginiHome/persiane.webp" alt="Persiane">
+                    <img loading="lazy" decoding="async" src="immaginiHome/persiane.webp" alt="Persiane" width="1200" height="900">
                 </div>
                 <div class="split-content">
                     <div class="content-wrapper">
@@ -200,7 +199,7 @@
             <!-- Sezione 4: Testo Sinistra / Img Destra -->
             <div class="product-split-section row-reverse bg-white scroll-reveal">
                 <div class="split-image">
-                    <img loading="lazy" decoding="async" src="immaginiHome/avvolgibili.jpg" alt="Avvolgibili">
+                    <img loading="lazy" decoding="async" src="immaginiHome/avvolgibili.jpg" alt="Avvolgibili" width="800" height="600">
                 </div>
                 <div class="split-content">
                     <div class="content-wrapper">
@@ -217,7 +216,7 @@
             <!-- Sezione 5: Img Sinistra / Testo Destra -->
             <div class="product-split-section bg-alt scroll-reveal">
                 <div class="split-image">
-                    <img loading="lazy" decoding="async" src="immaginiHome/zanzariere.jpg" alt="Zanzariere">
+                    <img loading="lazy" decoding="async" src="immaginiHome/zanzariere.jpg" alt="Zanzariere" width="1920" height="1284">
                 </div>
                 <div class="split-content">
                     <div class="content-wrapper">
@@ -243,9 +242,7 @@
                     <!-- Partner 1 -->
                     <div class="partner-card">
                         <div class="partner-logo-box" data-initial="R">
-                            <img loading="lazy" decoding="async" src="loghi/rehau.png" alt="REHAU Logo"
-                                class="brand-logo"
-                                onerror="this.style.display='none';this.parentNode.classList.add('logo-fallback')">
+                            <img loading="lazy" decoding="async" src="loghi/rehau.png" alt="REHAU Logo" class="brand-logo" onerror="this.style.display='none';this.parentNode.classList.add('logo-fallback')" width="500" height="159">
                         </div>
                         <h3>REHAU</h3>
                         <p>Leader europeo in soluzioni innovative per serramenti in PVC</p>
@@ -254,9 +251,7 @@
                     <!-- Partner 2 -->
                     <div class="partner-card">
                         <div class="partner-logo-box" data-initial="S">
-                            <img loading="lazy" decoding="async" src="loghi/schuco.png" alt="SCHÜCO Logo"
-                                class="brand-logo"
-                                onerror="this.style.display='none';this.parentNode.classList.add('logo-fallback')">
+                            <img loading="lazy" decoding="async" src="loghi/schuco.png" alt="SCHÜCO Logo" class="brand-logo" onerror="this.style.display='none';this.parentNode.classList.add('logo-fallback')" width="1200" height="393">
                         </div>
                         <h3>SCHÜCO</h3>
                         <p>Eccellenza tedesca in sistemi di finestre e facciate in alluminio</p>
@@ -265,8 +260,7 @@
                     <!-- Partner 3 -->
                     <div class="partner-card">
                         <div class="partner-logo-box" data-initial="V">
-                            <img loading="lazy" decoding="async" src="loghi/veka.png" alt="VEKA Logo" class="brand-logo"
-                                onerror="this.style.display='none';this.parentNode.classList.add('logo-fallback')">
+                            <img loading="lazy" decoding="async" src="loghi/veka.png" alt="VEKA Logo" class="brand-logo" onerror="this.style.display='none';this.parentNode.classList.add('logo-fallback')" width="400" height="400">
                         </div>
                         <h3>VEKA</h3>
                         <p>Qualità e innovazione nel settore dei profili in PVC</p>
@@ -275,9 +269,7 @@
                     <!-- Partner 4 -->
                     <div class="partner-card">
                         <div class="partner-logo-box" data-initial="S">
-                            <img loading="lazy" decoding="async" src="loghi/salamander.png" alt="SALAMANDER Logo"
-                                class="brand-logo"
-                                onerror="this.style.display='none';this.parentNode.classList.add('logo-fallback')">
+                            <img loading="lazy" decoding="async" src="loghi/salamander.png" alt="SALAMANDER Logo" class="brand-logo" onerror="this.style.display='none';this.parentNode.classList.add('logo-fallback')" width="2000" height="244">
                         </div>
                         <h3>SALAMANDER</h3>
                         <p>Tecnologie avanzate per serramenti ad alte prestazioni</p>
@@ -286,9 +278,7 @@
                     <!-- Partner 5 (Replaced) -->
                     <div class="partner-card">
                         <div class="partner-logo-box" data-initial="T">
-                            <img loading="lazy" decoding="async" src="loghi/tempotest.png" alt="TEMPOTEST Logo"
-                                class="brand-logo"
-                                onerror="this.style.display='none';this.parentNode.classList.add('logo-fallback')">
+                            <img loading="lazy" decoding="async" src="loghi/tempotest.png" alt="TEMPOTEST Logo" class="brand-logo" onerror="this.style.display='none';this.parentNode.classList.add('logo-fallback')" width="2000" height="549">
                         </div>
                         <h3>TEMPOTEST</h3>
                         <p>Leader mondiale nei tessuti per la protezione solare</p>
@@ -297,9 +287,7 @@
                     <!-- Partner 6 (Replaced) -->
                     <div class="partner-card">
                         <div class="partner-logo-box" data-initial="M">
-                            <img loading="lazy" decoding="async" src="loghi/mottura.png" alt="MOTTURA Logo"
-                                class="brand-logo"
-                                onerror="this.style.display='none';this.parentNode.classList.add('logo-fallback')">
+                            <img loading="lazy" decoding="async" src="loghi/mottura.png" alt="MOTTURA Logo" class="brand-logo" onerror="this.style.display='none';this.parentNode.classList.add('logo-fallback')" width="2000" height="833">
                         </div>
                         <h3>MOTTURA</h3>
                         <p>Sistemi di sicurezza e serrature d'eccellenza per la casa</p>
@@ -308,9 +296,7 @@
                     <!-- Partner 7 (Replaced) -->
                     <div class="partner-card">
                         <div class="partner-logo-box" data-initial="G">
-                            <img loading="lazy" decoding="async" src="loghi/Genius.png" alt="GENIUS Logo"
-                                class="brand-logo"
-                                onerror="this.style.display='none';this.parentNode.classList.add('logo-fallback')">
+                            <img loading="lazy" decoding="async" src="loghi/Genius.png" alt="GENIUS Logo" class="brand-logo" onerror="this.style.display='none';this.parentNode.classList.add('logo-fallback')" width="3214" height="2143">
                         </div>
                         <h3>GENIUS</h3>
                         <p>Soluzioni innovative per sistemi zanzariere di alta qualità</p>
@@ -319,9 +305,7 @@
                     <!-- Partner 8 -->
                     <div class="partner-card">
                         <div class="partner-logo-box" data-initial="SG">
-                            <img loading="lazy" decoding="async" src="loghi/Saint_Gobain.png" alt="SAINT-GOBAIN Logo"
-                                class="brand-logo"
-                                onerror="this.style.display='none';this.parentNode.classList.add('logo-fallback')">
+                            <img loading="lazy" decoding="async" src="loghi/Saint_Gobain.png" alt="SAINT-GOBAIN Logo" class="brand-logo" onerror="this.style.display='none';this.parentNode.classList.add('logo-fallback')" width="1716" height="743">
                         </div>
                         <h3>SAINT-GOBAIN</h3>
                         <p>Leader mondiale in vetri ad alte prestazioni</p>
@@ -340,7 +324,7 @@
                     <!-- Card 1 -->
                     <a href="#" class="blog-card">
                         <div class="blog-img-wrapper">
-                            <img loading="lazy" decoding="async" src="blog/bonussicurezza.jpg" alt="Bonus Sicurezza">
+                            <img loading="lazy" decoding="async" src="blog/bonussicurezza.jpg" alt="Bonus Sicurezza" width="958" height="575">
                             <div class="blog-date">28 maggio 2025</div>
                         </div>
                         <div class="blog-content">
@@ -353,7 +337,7 @@
                     <!-- Card 2 -->
                     <a href="#" class="blog-card">
                         <div class="blog-img-wrapper">
-                            <img loading="lazy" decoding="async" src="blog/porteinterne.webp" alt="Porte Interne">
+                            <img loading="lazy" decoding="async" src="blog/porteinterne.webp" alt="Porte Interne" width="1024" height="684">
                             <div class="blog-date">15 aprile 2025</div>
                         </div>
                         <div class="blog-content">
@@ -366,7 +350,7 @@
                     <!-- Card 3 -->
                     <a href="#" class="blog-card">
                         <div class="blog-img-wrapper">
-                            <img loading="lazy" decoding="async" src="blog/ecobonus.jpg" alt="Ecobonus">
+                            <img loading="lazy" decoding="async" src="blog/ecobonus.jpg" alt="Ecobonus" width="800" height="800">
                             <div class="blog-date">02 marzo 2025</div>
                         </div>
                         <div class="blog-content">
@@ -379,7 +363,7 @@
                     <!-- Card 4 -->
                     <a href="#" class="blog-card">
                         <div class="blog-img-wrapper">
-                            <img loading="lazy" decoding="async" src="blog/guidainfissi.jpg" alt="Guida Infissi">
+                            <img loading="lazy" decoding="async" src="blog/guidainfissi.jpg" alt="Guida Infissi" width="940" height="534">
                             <div class="blog-date">20 gennaio 2025</div>
                         </div>
                         <div class="blog-content">
@@ -415,7 +399,7 @@
                 <!-- Info Azienda -->
                 <div class="footer-col brand-col">
                     <div class="footer-logo">
-                        <img src="logo.png" alt="Infissi Paradise Logo" class="logo-img">
+                        <img src="logo.png" alt="Infissi Paradise Logo" class="logo-img" width="1600" height="900">
                     </div>
                     <p class="company-desc">Il primo ecommerce in Italia specializzato nella vendita online di infissi,
                         porte e sistemi di sicurezza di alta qualità dal design Made in Italy.</p>
@@ -472,7 +456,7 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
 </body>
 
     <!-- Trigger deploy -->
