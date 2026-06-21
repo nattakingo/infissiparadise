@@ -187,13 +187,41 @@ img {
 .announcement-bar {
     background-color: var(--primary);
     color: white;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 10px 20px;
     font-size: 13px;
     font-weight: 600;
     letter-spacing: 1px;
     position: relative;
     z-index: 100;
+}
+
+.announcement-socials {
+    position: absolute;
+    right: 40px;
+    display: flex;
+    gap: 15px;
+    font-size: 16px;
+}
+
+.announcement-socials a {
+    color: white;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+}
+
+.announcement-socials a:hover {
+    opacity: 0.8;
+    transform: scale(1.1);
+}
+
+@media (max-width: 992px) {
+    .announcement-socials {
+        display: none;
+    }
 }
 
 /* =========================================
