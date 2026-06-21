@@ -202,20 +202,32 @@ img {
     position: absolute;
     right: 40px;
     display: flex;
-    gap: 15px;
-    font-size: 16px;
+    gap: 12px;
 }
 
 .announcement-socials a {
-    color: white;
-    transition: transform 0.2s ease, opacity 0.2s ease;
+    background-color: white;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
     display: inline-flex;
     align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease;
+}
+
+.announcement-socials a[aria-label="Facebook"] {
+    color: #1877F2;
+}
+
+.announcement-socials a[aria-label="Instagram"] {
+    color: #E1306C;
 }
 
 .announcement-socials a:hover {
-    opacity: 0.8;
-    transform: scale(1.1);
+    transform: scale(1.15);
 }
 
 @media (max-width: 992px) {
