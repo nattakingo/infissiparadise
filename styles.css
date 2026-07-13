@@ -653,10 +653,6 @@ img {
     padding: 100px 0;
 }
 
-.mt-30 {
-    margin-top: 30px;
-}
-
 .btn-white {
     background-color: white !important;
     color: var(--primary) !important;
@@ -711,10 +707,6 @@ img {
 
 .hero-avvolgibili {
     background-image: url('immaginiAvvolgibili/avvolgibiliHero.jpg');
-}
-
-.hero-veneziane {
-    background-image: url('https://images.unsplash.com/photo-1582200882103-68e4bf96f30a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
 }
 
 .hero-cassonetti {
@@ -1772,12 +1764,6 @@ img {
     color: var(--text-muted);
 }
 
-.gallery-section {
-    padding: 100px 0;
-    image-rendering: auto;
-    content-visibility: auto;
-}
-
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -1786,10 +1772,17 @@ img {
 
 .gallery-item {
     position: relative;
-    border-radius: 8px;
+    border-radius: var(--radius-md);
     overflow: hidden;
     height: 300px;
-    will-change: transform;
+    cursor: pointer;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.02);
+    box-shadow: var(--shadow-md);
 }
 
 .gallery-item img {
