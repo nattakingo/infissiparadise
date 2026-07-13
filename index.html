@@ -18,6 +18,7 @@
         rel="stylesheet">
 
     <!-- Phosphor Icons (Script version for easier use) -->
+    <link rel="preload" href="https://unpkg.com/@phosphor-icons/web" as="script">
     <script src="https://unpkg.com/@phosphor-icons/web" defer></script>
 
     <!-- Custom CSS -->
@@ -55,7 +56,7 @@
                 <!-- Logo -->
                 <div class="header-logo">
                     <a href="index.html">
-                        <img src="logo.png" alt="Infissi Paradise Logo" class="logo-img" width="1600" height="900">
+                        <img src="logo.png" alt="Infissi Paradise Logo" class="logo-img" width="1600" height="900" fetchpriority="high">
                     </a>
                 </div>
             </div>
@@ -403,7 +404,7 @@
                 <!-- Info Azienda -->
                 <div class="footer-col brand-col">
                     <div class="footer-logo">
-                        <img src="logo.png" alt="Infissi Paradise Logo" class="logo-img" width="1600" height="900">
+                        <img src="logo.png" alt="Infissi Paradise Logo" class="logo-img" width="1600" height="900" loading="lazy" decoding="async">
                     </div>
                     <p class="company-desc">Il primo ecommerce in Italia specializzato nella vendita online di infissi,
                         porte e sistemi di sicurezza di alta qualità dal design Made in Italy.</p>
