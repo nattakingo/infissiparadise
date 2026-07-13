@@ -1,5 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+    /* --- 0. Deferred Video Autoplay --- */
+    const heroVideo = document.querySelector('.slide-video');
+    if (heroVideo) {
+        window.addEventListener('load', () => {
+            heroVideo.play().catch(() => {});
+        }, { once: true });
+    }
+
     /* --- 1. Hero Slider --- */
     const slides = document.querySelectorAll('.slide');
 

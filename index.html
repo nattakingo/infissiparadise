@@ -9,13 +9,12 @@
     <meta name="theme-color" content="#4C8A71">
     <title>ShowRoom Infissi - Il Primo Ecommerce Italiano di Serramenti Porte e Finestre</title>
 
-    <!-- Google Fonts -->
+    <!-- Google Fonts (non-render-blocking) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://images.unsplash.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet"></noscript>
 
     <!-- Phosphor Icons (Script version for easier use) -->
     <link rel="preload" href="https://unpkg.com/@phosphor-icons/web" as="script">
@@ -87,11 +86,11 @@
             <div class="slides-container" id="slides-container">
                 <!-- Slide 1: Hero Video -->
                 <div class="slide active">
-                    <video autoplay muted loop playsinline x-webkit-airplay="allow" preload="metadata"
+                    <video muted loop playsinline x-webkit-airplay="allow" preload="none"
                         class="slide-video"
-                        poster="https://images.unsplash.com/photo-1505691938895-1758d7feb511?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80">
+                        poster="https://images.unsplash.com/photo-1505691938895-1758d7feb511?ixlib=rb-4.0.3&auto=format&fit=crop&w=1280&q=60">
                         <source src="hero.mp4" type="video/mp4">
-                        <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Finestre e Portefinestre" class="slide-img" fetchpriority="high" decoding="async">
+                        <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?ixlib=rb-4.0.3&auto=format&fit=crop&w=1280&q=60" alt="Finestre e Portefinestre" class="slide-img" fetchpriority="high" decoding="async" width="1280" height="720">
                         Il tuo browser non supporta il formato video.
                     </video>
 
