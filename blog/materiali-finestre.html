@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#4C8A71">
+    <meta name="description"
+        content="Guida ai materiali per finestre e infissi: PVC, legno, alluminio, legno-alluminio e acciaio. Pro, contro e quale scegliere per le tue esigenze.">
+    <title>Quali Materiali Scegliere per le Finestre? PVC, Legno, Alluminio | ShowRoom Infissi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet"></noscript>
+    <link rel="preload" href="https://unpkg.com/@phosphor-icons/web" as="script">
+    <script src="https://unpkg.com/@phosphor-icons/web" defer></script>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        .blog-hero {
+            background: linear-gradient(135deg, #0d1f17 0%, #1a3a2a 50%, #0d1f17 100%);
+            padding: 6rem 0 3rem;
+            text-align: center;
+        }
+        .blog-hero h1 {
+            font-size: clamp(1.8rem, 4vw, 2.6rem);
+            color: #fff;
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+        .blog-hero .blog-meta {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            color: rgba(255,255,255,0.6);
+            font-size: 0.9rem;
+        }
+        .blog-hero .blog-meta span {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+        .article-body {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem 4rem;
+        }
+        .article-body h2 {
+            font-size: 1.6rem;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-main);
+        }
+        .article-body h3 {
+            font-size: 1.2rem;
+            margin-top: 2rem;
+            margin-bottom: 0.8rem;
+            color: var(--text-main);
+        }
+        .article-body p {
+            color: var(--text-muted);
+            line-height: 1.8;
+            margin-bottom: 1.2rem;
+            font-size: 1rem;
+        }
+        .article-body ul,
+        .article-body ol {
+            color: var(--text-muted);
+            line-height: 1.8;
+            margin-bottom: 1.2rem;
+            padding-left: 1.5rem;
+        }
+        .article-body li {
+            margin-bottom: 0.5rem;
+        }
+        .article-body strong {
+            color: var(--text-main);
+        }
+        .article-body .highlight-box {
+            background: var(--primary-light);
+            border-left: 4px solid var(--primary);
+            border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+        .article-body .highlight-box p {
+            margin: 0;
+            color: var(--text-main);
+        }
+        .article-body .highlight-box strong {
+            color: var(--primary-dark);
+        }
+        .article-body .info-box {
+            background: #f0fdf4;
+            border: 1px solid #bbf7d0;
+            border-radius: var(--radius-sm);
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+        .article-body .info-box h3 {
+            margin-top: 0;
+            color: #166534;
+        }
+        .article-body .info-box ul {
+            margin-bottom: 0;
+        }
+        .article-body .info-box li {
+            color: #166534;
+        }
+        .article-body .sp-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            font-size: 0.95rem;
+        }
+        .article-body .sp-table th,
+        .article-body .sp-table td {
+            padding: 0.8rem 1rem;
+            text-align: left;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        .article-body .sp-table th {
+            background: var(--primary);
+            color: #fff;
+            font-weight: 600;
+        }
+        .article-body .sp-table tr:nth-child(even) {
+            background: #f9fafb;
+        }
+        .article-body .cta-inline {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--primary);
+            color: #fff;
+            padding: 0.8rem 1.5rem;
+            border-radius: var(--radius-sm);
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.3s ease;
+            margin: 1rem 0;
+        }
+        .article-body .cta-inline:hover {
+            background: var(--primary-dark);
+        }
+        .article-body .cta-inline i {
+            font-size: 1.2rem;
+        }
+        .blog-breadcrumb {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1rem 1.5rem 0;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+        .blog-breadcrumb a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        .blog-breadcrumb a:hover {
+            text-decoration: underline;
+        }
+        .blog-breadcrumb span {
+            margin: 0 0.4rem;
+            color: #9ca3af;
+        }
+        .related-articles {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 1.5rem 4rem;
+        }
+        .related-articles h2 {
+            font-size: 1.4rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-main);
+        }
+        .related-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.2rem;
+        }
+        .related-card {
+            display: block;
+            background: #fff;
+            border-radius: var(--radius-md);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            overflow: hidden;
+            text-decoration: none;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .related-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+        }
+        .related-card img {
+            width: 100%;
+            height: 140px;
+            object-fit: cover;
+        }
+        .related-card .related-info {
+            padding: 1rem;
+        }
+        .related-card .related-info h3 {
+            font-size: 0.9rem;
+            color: var(--text-main);
+            margin: 0 0 0.3rem;
+            line-height: 1.3;
+        }
+        .related-card .related-info p {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="announcement-bar">
+        <span>🚚INFISSI E SERRAMENTI A ROMA - TRASPORTO E MONTAGGIO CERTIFICATO INCLUSI</span>
+        <div class="announcement-socials">
+            <a href="https://www.facebook.com/InfissiParadise/" target="_blank" aria-label="Facebook"><i class="ph ph-facebook-logo"></i></a>
+            <a href="https://www.instagram.com/infissiparadise/" target="_blank" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
+        </div>
+    </div>
+
+    <header class="header" id="main-header">
+        <div class="header-top">
+            <div class="header-container">
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">
+                    <i class="ph ph-list"></i>
+                </button>
+                <div class="header-search">
+                    <button aria-label="Cerca">
+                        <i class="ph ph-magnifying-glass"></i>
+                    </button>
+                </div>
+                <div class="header-logo">
+                    <a href="../index.html">
+                        <img src="../logo.png" alt="Infissi Paradise Logo" class="logo-img" width="1600" height="900" fetchpriority="high" srcset="../logo.png 1600w" sizes="(max-width: 768px) 120px, 200px">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <nav class="header-nav" aria-label="Menu principale">
+            <ul class="nav-list" id="nav-list">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../finestre.html">Finestre e Portefinestre</a></li>
+                <li><a href="../porte-blindate.html">Porte Blindate</a></li>
+                <li><a href="../persiane.html">Persiane</a></li>
+                <li><a href="../avvolgibili.html">Avvolgibili</a></li>
+                <li><a href="../cassonetti.html">Cassonetti</a></li>
+                <li><a href="../zanzariere.html">Zanzariere</a></li>
+                <li><a href="../grate-sicurezza.html">Grate di Sicurezza</a></li>
+                <li><a href="../tende-da-sole.html">Tende da Sole</a></li>
+            </ul>
+        </nav>
+        <div class="nav-overlay" id="nav-overlay"></div>
+    </header>
+
+    <main>
+        <section class="blog-hero">
+            <div class="container">
+                <h1>Quali Materiali Scegliere per le Finestre?</h1>
+                <div class="blog-meta">
+                    <span><i class="ph ph-calendar"></i> 20 gennaio 2025</span>
+                    <span><i class="ph ph-clock"></i> 8 min di lettura</span>
+                    <span><i class="ph ph-tag"></i> Guide Acquisto</span>
+                </div>
+            </div>
+        </section>
+
+        <nav class="blog-breadcrumb" aria-label="Breadcrumb">
+            <a href="../index.html">Home</a>
+            <span>/</span>
+            <a href="../index.html#blog">Blog</a>
+            <span>/</span>
+            Materiali Finestre
+        </nav>
+
+        <article class="article-body">
+            <p><strong>La scelta del materiale per i nuovi infissi è una delle decisioni più importanti.</strong> Non esiste un materiale migliore in assoluto, ma uno più adatto alle proprie esigenze. PVC, legno, alluminio, legno-alluminio e acciaio: ciascuno ha caratteristiche specifiche che lo rendono più o meno indicato in base alle priorità dell'acquirente.</p>
+
+            <p>In questa guida analizziamo i pro e i contro di ogni materiale per aiutarti a scegliere la soluzione più adatta alla tua casa.</p>
+
+            <h2>Prima di scegliere: le tue esigenze</h2>
+            <p>Prima di valutare i materiali, è importante capire <strong>quali sono i motivi principali</strong> per cui si cambiano le finestre:</p>
+            <ul>
+                <li><strong>Isolamento termico</strong> — ridurre i consumi di riscaldamento e condizionamento</li>
+                <li><strong>Isolamento acustico</strong> — proteggersi dal rumore esterno</li>
+                <li><strong>Durata nel tempo</strong> — un investimento che deve durare decenni</li>
+                <li><strong>Estetica</strong> — l'aspetto visivo della finestra</li>
+                <li><strong>Tenuta all'acqua</strong> — resistenza alle infiltrazioni</li>
+                <li><strong>Protezione antifurto</strong> — sicurezza dell'abitazione</li>
+                <li><strong>Comfort visivo</strong> — luce naturale e vista panoramica</li>
+                <li><strong>Aerazione controllata</strong> — ventilazione senza perdita di energia</li>
+                <li><strong>Tutela dell'ambiente</strong> — impatto ecologico del materiale</li>
+            </ul>
+
+            <h2>PVC (Cloruro di Polivinile)</h2>
+            <p>Il PVC è un materiale derivato dal petrolio, caratterizzato da <strong>costi contenuti e buone doti di isolamento</strong>. I profili vengono ottenuti per estrusione a caldo, con una camera centrale rinforzata con acciaio zincato per garantire stabilità strutturale.</p>
+
+            <h3>Vantaggi</h3>
+            <ul>
+                <li>Costi contenuti rispetto ad altri materiali</li>
+                <li>Buone doti di isolamento termico e acustico</li>
+                <li>Stabilità agli urti e resistenza agli agenti atmosferici</li>
+                <li>Manutenzione minima</li>
+                <li>Non richiede verniciatura</li>
+            </ul>
+
+            <h3>Limiti</h3>
+            <ul>
+                <li>Non adatto a grandi luci e dimensioni importanti</li>
+                <li>Tende a indurirsi e scolorire nel tempo per effetto dei raggi UV</li>
+                <li>Impatto ambientale: problemi di biodegradazione e tossicità in caso di incendio</li>
+            </ul>
+
+            <h2>Alluminio</h2>
+            <p>L'alluminio è una lega composta da alluminio, silicio e magnesio con una piccola percentuale di rame. È il materiale <strong>più utilizzato per grandi superfici vetrate</strong>, dove è necessaria resistenza strutturale con profili ridotti.</p>
+
+            <h3>Vantaggi</h3>
+            <ul>
+                <li>Profili ridotti e design moderno</li>
+                <li>Resistenza meccanica elevata</li>
+                <li>Adatto a grandi superfici vetrate</li>
+                <li>Trattamenti superficiali: anodizzato, elettrocolorato o verniciato</li>
+                <li>Lunga durata senza manutenzione</li>
+            </ul>
+
+            <h3>Limiti</h3>
+            <ul>
+                <li>Eccellente conduttore termico: il <strong>peggiore materiale per isolamento termico e acustico</strong> se utilizzato senza interventi specifici</li>
+                <li>Solo in composizione con materiali isolanti (taglio termico) diventa performante, ma a discapito dei costi</li>
+            </ul>
+
+            <h2>Legno</h2>
+            <p>Esteticamente il materiale più quotato, il legno offre le <strong>migliori performance di isolamento termico e acustico</strong>. Ha inoltre un basso impatto ambientale, rendendolo la scelta ideale per chi punta alla sostenibilità.</p>
+            <p>Il <strong>legno lamellare</strong> (strati di legno incollati con venature incrociate) è più resistente del massello e garantisce ottima stabilità nel tempo, con garanzia fino a 10 anni. Ideale sia per ristrutturazioni che per nuove costruzioni.</p>
+
+            <h3>Vantaggi</h3>
+            <ul>
+                <li>Migliori doti di isolamento termico e acustico</li>
+                <li>Estetica calda e naturale</li>
+                <li>Basso impatto ambientale</li>
+                <li>Legno lamellare ad alta stabilità dimensionale</li>
+                <li>Garanzia fino a 10 anni</li>
+            </ul>
+
+            <h3>Limiti</h3>
+            <ul>
+                <li>Richiede manutenzione periodica (trattamenti e verniciatura)</li>
+                <li>Costo più elevato rispetto al PVC</li>
+            </ul>
+
+            <h2>Legno-Alluminio</h2>
+            <p>I sistemi legno-alluminio coniugano le <strong>virtù dei due materiali</strong> in una soluzione mista. Il legno è posizionato internamente (calore e estetica), mentre l'alluminio protegge esternamente dagli agenti atmosferici.</p>
+
+            <h3>Vantaggi</h3>
+            <ul>
+                <li>Profili ridotti ad alta resistenza</li>
+                <li>Bassa conducibilità termica grazie al legno interno</li>
+                <li>Manutenzione limitata grazie al rivestimento esterno in alluminio</li>
+                <li>Doppia colorazione possibile (interno/esterno)</li>
+                <li>Riparabilità elevata</li>
+                <li>Adatto anche a infissi di grandi dimensioni</li>
+                <li>Le tecnologie attuali permettono profili minimali anche nei sistemi misti</li>
+            </ul>
+
+            <h2>Legno-Vetro</h2>
+            <p>Il legno-vetro rappresenta l'<strong>evoluzione del legno-alluminio</strong>. La finestra è minimale in legno lamellare con anta rivestita esternamente da una vetrata isolante con vetro "a scalino" serigrafato. L'alluminio esterno viene sostituito con maggiore estetica e design.</p>
+            <p>Il telaio è rivestito esternamente da una copertina in alluminio, rappresentando la <strong>massima espressione dell'utilizzo dei materiali in funzione delle loro caratteristiche</strong>: legno per l'interno, vetro per l'esterno, con un risultato estetico e prestazionale d'eccellenza.</p>
+
+            <h2>Acciaio (Ferro)</h2>
+            <p>L'acciaio è disponibile in tre tipologie principali:</p>
+            <ul>
+                <li><strong>Zincato:</strong> con strato di zinco per protezione dalla corrosione</li>
+                <li><strong>Inox:</strong> lega ferro-molibdeno-nichel-cromo, altamente resistente alla corrosione</li>
+                <li><strong>Corten:</strong> si auto-protette con ossidazione, creando una patina protettiva naturale</li>
+            </ul>
+            <p>Viene utilizzato per <strong>ridotte sezioni, robustezza e grandi vetrate</strong>. I problemi principali sono l'isolamento termico (mitigabile con profili a taglio termico) e il prezzo elevato.</p>
+
+            <h2>Tabella comparativa</h2>
+
+            <table class="sp-table">
+                <thead>
+                    <tr>
+                        <th>Materiale</th>
+                        <th>Isolamento termico</th>
+                        <th>Isolamento acustico</th>
+                        <th>Durabilità</th>
+                        <th>Manutenzione</th>
+                        <th>Costo indicativo</th>
+                        <th>Ideale per</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>PVC</strong></td>
+                        <td>Buono</td>
+                        <td>Buono</td>
+                        <td>Media-alta</td>
+                        <td>Minima</td>
+                        <td>€</td>
+                        <td>Budget, case moderne</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Alluminio</strong></td>
+                        <td>Basso (senza taglio termico)</td>
+                        <td>Basso</td>
+                        <td>Alta</td>
+                        <td>Minima</td>
+                        <td>€€</td>
+                        <td>Grandi vetrate, uffici</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Legno</strong></td>
+                        <td>Eccellente</td>
+                        <td>Eccellente</td>
+                        <td>Alta</td>
+                        <td>Periodica</td>
+                        <td>€€€</td>
+                        <td>Ristrutturazioni, estetica</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Legno-Alluminio</strong></td>
+                        <td>Eccellente</td>
+                        <td>Eccellente</td>
+                        <td>Molto alta</td>
+                        <td>Minima</td>
+                        <td>€€€€</td>
+                        <td>Qualità massima, design</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Legno-Vetro</strong></td>
+                        <td>Eccellente</td>
+                        <td>Eccellente</td>
+                        <td>Molto alta</td>
+                        <td>Minima</td>
+                        <td>€€€€€</td>
+                        <td>Design contemporaneo</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Acciaio</strong></td>
+                        <td>Basso (taglio termico: buono)</td>
+                        <td>Buono</td>
+                        <td>Molto alta</td>
+                        <td>Minima</td>
+                        <td>€€€€</td>
+                        <td>Industriale, grandi aperture</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Conclusioni</h2>
+            <p><strong>Non esiste il materiale migliore in assoluto.</strong> Ogni opzione ha punti di forza e limiti che la rendono più o meno adatta a determinate esigenze. L'importante è capire le proprie priorità — isolamento, estetica, durata, budget — e rivolgersi a professionisti qualificati che possano consigliare la soluzione più adatta.</p>
+
+            <div class="highlight-box">
+                <p><strong>Consiglio:</strong> Non basare la scelta solo sul prezzo. Un infisso di qualità nel materiale giusto ti farà risparmiare in bolletta, aumenterà il valore della tua casa e durerà decenni. Investire bene ora significa risparmiare per tutta la vita.</p>
+            </div>
+
+            <h2>Hai domande?</h2>
+            <p>Se stai valutando la sostituzione degli infissi e non sai quale materiale scegliere, <strong>contattaci senza impegno</strong>. Il nostro team è a disposizione per consigliarti la soluzione più adatta alle tue esigenze e al tuo budget.</p>
+
+            <a href="https://wa.me/393396992947" class="cta-inline" target="_blank" rel="noopener">
+                <i class="ph ph-whatsapp-logo"></i> Parla con noi su WhatsApp
+            </a>
+        </article>
+
+        <section class="related-articles">
+            <h2>Articoli Correlati</h2>
+            <div class="related-grid">
+                <a href="../bonus-sicurezza.html" class="related-card">
+                    <img src="../blog/bonussicurezza.jpg" alt="Bonus Sicurezza" loading="lazy" decoding="async">
+                    <div class="related-info">
+                        <h3>Bonus Sicurezza 50%</h3>
+                        <p>Detrazione fiscale per inferriate, grate e sistemi di sicurezza</p>
+                    </div>
+                </a>
+                <a href="detrazioni-fiscali-infissi.html" class="related-card">
+                    <img src="../blog/detrazionifiscali.jpg" alt="Detrazioni Fiscali Infissi" loading="lazy" decoding="async">
+                    <div class="related-info">
+                        <h3>Detrazioni Fiscali Infissi</h3>
+                        <p>Guida completa alle detrazioni 2026 per infissi e serramenti</p>
+                    </div>
+                </a>
+                <a href="../finestre.html" class="related-card">
+                    <img src="../blog/finestre.jpg" alt="Finestre e Infissi" loading="lazy" decoding="async">
+                    <div class="related-info">
+                        <h3>Finestre e Portefinestre</h3>
+                        <p>Soluzioni ad alta efficienza energetica per la tua casa</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col brand-col">
+                    <div class="footer-logo">
+                        <img src="../logo.png" alt="Infissi Paradise Logo" class="logo-img" width="1600" height="900" loading="lazy" decoding="async" srcset="../logo.png 1600w" sizes="(max-width: 768px) 120px, 200px">
+                    </div>
+                    <p class="company-desc">Il primo ecommerce in Italia specializzato nella vendita online di infissi,
+                        porte e sistemi di sicurezza di alta qualità dal design Made in Italy.</p>
+                    <ul class="contact-list">
+                        <li><i class="ph ph-envelope-simple"></i> infissiparadise@gmail.com</li>
+                        <li><i class="ph ph-phone"></i> +39 339 699 2947</li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Prodotti</h3>
+                    <ul class="footer-links">
+                        <li><a href="../finestre.html">Finestre e Portefinestre</a></li>
+                        <li><a href="../porte-blindate.html">Porte Blindate</a></li>
+                        <li><a href="../persiane.html">Persiane</a></li>
+                        <li><a href="../avvolgibili.html">Avvolgibili</a></li>
+                        <li><a href="../cassonetti.html">Cassonetti</a></li>
+                        <li><a href="../zanzariere.html">Zanzariere</a></li>
+                        <li><a href="../grate-sicurezza.html">Grate di Sicurezza</a></li>
+                        <li><a href="../tende-da-sole.html">Tende da Sole</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Seguici</h3>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/InfissiParadise/" target="_blank" aria-label="Facebook"><i class="ph ph-facebook-logo"></i></a>
+                        <a href="https://www.instagram.com/infissiparadise/" target="_blank" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Showroom Infissi - P.IVA 18042301004. Tutti i diritti riservati.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../main.js" defer></script>
+</body>
+
+</html>
