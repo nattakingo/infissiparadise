@@ -1245,13 +1245,21 @@ img{
  .split-image{
  min-height:350px;
  order:1;
- 
-}
+
+ }
 
  .split-content{
  padding:60px 20px;
  order:2;
-}
+ }
+
+ .text-first-mobile .split-content{
+ order:1;
+ }
+
+ .text-first-mobile .split-image{
+ order:2;
+ }
 
  .footer-grid{
  grid-template-columns:repeat(2, 1fr);
