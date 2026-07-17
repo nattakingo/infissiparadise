@@ -902,8 +902,10 @@ img{
 }
 
 .split-content .content-wrapper p{
- font-size:17px;
- color:var(--text-muted);
+ font-size:16px;
+ line-height:1.85;
+ color:#7a7a7a;
+ font-weight:400;
  margin-bottom:35px;
 }
 
