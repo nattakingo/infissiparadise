@@ -84,16 +84,22 @@ document.addEventListener('DOMContentLoaded', () => {
     /* --- 3. Scroll Reveal --- */
     const revealElements = document.querySelectorAll('.scroll-reveal');
     if (revealElements.length > 0) {
-        const revealObserver = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('revealed');
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.15 });
+        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-        revealElements.forEach(el => revealObserver.observe(el));
+        if (prefersReducedMotion) {
+            revealElements.forEach(el => el.classList.add('revealed'));
+        } else {
+            const revealObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('revealed');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.15 });
+
+            revealElements.forEach(el => revealObserver.observe(el));
+        }
     }
 
     /* --- 4. Gallery Lightbox --- */
@@ -138,6 +144,32 @@ document.addEventListener('DOMContentLoaded', () => {
             if (e.key === 'Escape' && lightbox.classList.contains('active')) {
                 closeLightbox();
             }
+        });
+    }
+
+    /* --- 5. FAQ Toggle --- */
+    const faqItems = document.querySelectorAll('.sp-faq-item');
+    if (faqItems.length > 0) {
+        faqItems.forEach(item => {
+            const question = item.querySelector('.sp-faq-question');
+            if (!question) return;
+
+            question.setAttribute('role', 'button');
+            question.setAttribute('tabindex', '0');
+            question.setAttribute('aria-expanded', 'false');
+
+            const toggle = () => {
+                const isOpen = item.classList.toggle('open');
+                question.setAttribute('aria-expanded', String(isOpen));
+            };
+
+            question.addEventListener('click', toggle);
+            question.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    toggle();
+                }
+            });
         });
     }
 });
