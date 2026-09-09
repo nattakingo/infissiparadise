@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#4C8A71">
+    <meta name="description"
+        content="Chi siamo: ShowRoom Infissi, azienda specializzata in serramenti, infissi, porte blindate e sistemi di sicurezza dal 1992. Scopri la nostra storia, la mission e i nostri valori.">
+    <title>Chi Siamo | ShowRoom Infissi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet"></noscript>
+    <link rel="preload" href="https://unpkg.com/@phosphor-icons/web" as="script">
+    <script src="https://unpkg.com/@phosphor-icons/web" defer></script>
+    <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .about-hero {
+            background: linear-gradient(135deg, #0d1f17 0%, #1a3a2a 50%, #0d1f17 100%);
+            padding: 6rem 0 3rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .about-hero h1 {
+            font-size: clamp(1.8rem, 4vw, 3rem);
+            color: #fff;
+            margin-bottom: 1rem;
+        }
+        .about-hero p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 1.05rem;
+            max-width: 680px;
+            margin: 0 auto;
+        }
+        .about-intro {
+            padding: 5rem 0;
+            background: var(--bg-alt);
+        }
+        .about-split {
+            display: flex;
+            align-items: center;
+            gap: 60px;
+            max-width: var(--container-max);
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+        .about-split-text {
+            flex: 1;
+        }
+        .about-split-text h2 {
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-main);
+        }
+        .about-split-text p {
+            color: var(--text-muted);
+            line-height: 1.85;
+            margin-bottom: 1.2rem;
+        }
+        .about-split-image {
+            flex: 1;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+        }
+        .about-split-image img {
+            width: 100%;
+            height: 420px;
+            object-fit: cover;
+        }
+        .about-values {
+            padding: 5rem 0;
+            background: #0d1117;
+        }
+        .about-values .section-header h2 {
+            color: #fff;
+        }
+        .about-values .section-header p {
+            color: rgba(255, 255, 255, 0.6);
+        }
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+        }
+        .value-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 40px 25px;
+            text-align: center;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+        .value-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+        .value-card i {
+            font-size: 2.5rem;
+            color: var(--mint-green);
+            margin-bottom: 1rem;
+        }
+        .value-card h3 {
+            font-size: 1.1rem;
+            color: #fff;
+            margin-bottom: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .value-card p {
+            font-size: 0.9rem;
+            color: #808080;
+            line-height: 1.6;
+        }
+        .about-numbers {
+            padding: 4rem 0;
+            background: var(--primary);
+        }
+        .numbers-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            text-align: center;
+        }
+        .number-item strong {
+            display: block;
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #fff;
+        }
+        .number-item span {
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 0.95rem;
+        }
+        .about-cta {
+            padding: 5rem 0;
+            text-align: center;
+        }
+        .about-cta h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        .about-cta p {
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
+        @media (max-width: 992px) {
+            .about-split {
+                flex-direction: column;
+                gap: 40px;
+                padding: 0 20px;
+            }
+            .values-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .numbers-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 600px) {
+            .values-grid {
+                grid-template-columns: 1fr;
+            }
+            .numbers-grid {
+                grid-template-columns: 1fr;
+            }
+            .about-split-image img {
+                height: 280px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="announcement-bar">
+        <span>🚚INFISSI E SERRAMENTI A ROMA - TRASPORTO E MONTAGGIO CERTIFICATO INCLUSI</span>
+        <div class="announcement-socials">
+            <a href="https://www.facebook.com/InfissiParadise/" target="_blank" aria-label="Facebook"><i class="ph ph-facebook-logo"></i></a>
+            <a href="https://www.instagram.com/infissiparadise/" target="_blank" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
+        </div>
+    </div>
+
+    <header class="header" id="main-header">
+        <div class="header-top">
+            <div class="header-container">
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">
+                    <i class="ph ph-list"></i>
+                </button>
+                <div class="header-search">
+                    <button aria-label="Cerca">
+                        <i class="ph ph-magnifying-glass"></i>
+                    </button>
+                </div>
+                <div class="header-logo">
+                    <a href="index.html">
+                        <img src="logo.png" alt="Infissi Paradise Logo" class="logo-img" width="1600" height="900" fetchpriority="high" srcset="logo.png 1600w" sizes="(max-width: 768px) 120px, 200px">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <nav class="header-nav" aria-label="Menu principale">
+            <ul class="nav-list" id="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="finestre.html">Finestre e Portefinestre</a></li>
+                <li><a href="porte-blindate.html">Porte Blindate</a></li>
+                <li><a href="persiane.html">Persiane</a></li>
+                <li><a href="avvolgibili.html">Avvolgibili</a></li>
+                <li><a href="cassonetti.html">Cassonetti</a></li>
+                <li><a href="zanzariere.html">Zanzariere</a></li>
+                <li><a href="grate-sicurezza.html">Grate di Sicurezza</a></li>
+                <li><a href="tende-da-sole.html">Tende da Sole</a></li>
+            </ul>
+        </nav>
+        <div class="nav-overlay" id="nav-overlay"></div>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section class="about-hero">
+            <div class="container">
+                <h1>Chi Siamo</h1>
+                <p>Da oltre 30 anni progettiamo e realizziamo serramenti di alta qualità, unendo tecnologia, artigianalità e design Made in Italy.</p>
+            </div>
+        </section>
+
+        <!-- Intro -->
+        <section class="about-intro">
+            <div class="about-split">
+                <div class="about-split-text">
+                    <span class="badge">Dal 1992</span>
+                    <h2>La nostra storia</h2>
+                    <p><strong>Infissi Paradise</strong> nasce da un team produttore di porte e finestre attivo dal <strong>1992</strong>. Le caratteristiche che contraddistinguono il gruppo sono un reparto tecnico di <strong>ricerca e progettazione</strong> personalizzata di sistemi per porte e finestre e una produzione completa in tutti gli ambiti degli infissi.</p>
+                    <p>Oggi siamo un punto di riferimento a <strong>Roma e provincia</strong> per la vendita e l'installazione di serramenti certificati. Collaboriamo esclusivamente con i migliori brand europei — REHAU, SCHÜCO, VEKA, SALAMANDER, Saint-Gobain e molti altri — per garantire qualità, innovazione e affidabilità in ogni progetto.</p>
+                    <p>Il nostro showroom rappresenta il primo ecommerce italiano nel settore, con la possibilità di consultare online l'intera gamma di prodotti e richiedere preventivi in tempo reale.</p>
+                </div>
+                <div class="about-split-image">
+                    <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=1200&q=60" alt="Produzione infissi" loading="lazy" decoding="async" width="1200" height="800">
+                </div>
+            </div>
+        </section>
+
+        <!-- Valori -->
+        <section class="about-values">
+            <div class="container">
+                <div class="section-header">
+                    <span class="badge">I Nostri Valori</span>
+                    <h2>Ciò in cui crediamo</h2>
+                    <p>Ogni progetto che realizziamo è guidato da principi fermi che ci accompagnano dal primo giorno.</p>
+                </div>
+                <div class="values-grid">
+                    <div class="value-card">
+                        <i class="ph ph-medal"></i>
+                        <h3>Qualità Certificata</h3>
+                        <p>Prodotti testati e certificati secondo le più severe normative europee per garantire prestazioni reali e durature.</p>
+                    </div>
+                    <div class="value-card">
+                        <i class="ph ph-lightbulb"></i>
+                        <h3>Innovazione</h3>
+                        <p>Reparto tecnico dedicato alla ricerca e allo sviluppo di soluzioni personalizzate per ogni tipo di esigenza.</p>
+                    </div>
+                    <div class="value-card">
+                        <i class="ph ph-handshake"></i>
+                        <h3>Artigianalità</h3>
+                        <p>L'esperienza di chi costruisce porte e finestre da oltre tre decenni, con la cura del dettaglio che solo il Made in Italy sa offrire.</p>
+                    </div>
+                    <div class="value-card">
+                        <i class="ph ph-headset"></i>
+                        <h3>Assistenza</h3>
+                        <p>Supporto completo prima, durante e dopo l'installazione. Siamo al tuo fianco dalla scelta del prodotto alla posa in opera.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Numeri -->
+        <section class="about-numbers">
+            <div class="container">
+                <div class="numbers-grid">
+                    <div class="number-item">
+                        <strong>30+</strong>
+                        <span>Anni di esperienza</span>
+                    </div>
+                    <div class="number-item">
+                        <strong>1000+</strong>
+                        <span>Installazioni completate</span>
+                    </div>
+                    <div class="number-item">
+                        <strong>8</strong>
+                        <span>Gamme di prodotti</span>
+                    </div>
+                    <div class="number-item">
+                        <strong>10+</strong>
+                        <span>Brand partner europei</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="about-cta">
+            <div class="container">
+                <h2>Hai un progetto in mente?</h2>
+                <p>Contattaci per un preventivo gratuito. I nostri tecnici ti guideranno nella scelta della soluzione più adatta alle tue esigenze.</p>
+                <div class="hero-btns center">
+                    <a href="https://wa.me/393396992947" class="btn btn-whatsapp" target="_blank" rel="noopener"><i class="ph ph-whatsapp-logo"></i> Scrivici su WhatsApp</a>
+                    <a href="contatti.html" class="btn btn-outline-dark">Richiedi Preventivo</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col brand-col">
+                    <div class="footer-logo">
+                        <img src="logo.png" alt="Infissi Paradise Logo" class="logo-img" width="1600" height="900" loading="lazy" decoding="async" srcset="logo.png 1600w" sizes="(max-width: 768px) 120px, 200px">
+                    </div>
+                    <p class="company-desc">Il primo ecommerce in Italia specializzato nella vendita online di infissi,
+                        porte e sistemi di sicurezza di alta qualità dal design Made in Italy.</p>
+                    <ul class="contact-list">
+                        <li><i class="ph ph-envelope-simple"></i> infissiparadise@gmail.com</li>
+                        <li><i class="ph ph-phone"></i> +39 339 699 2947</li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Prodotti</h3>
+                    <ul class="footer-links">
+                        <li><a href="finestre.html">Finestre e Portefinestre</a></li>
+                        <li><a href="porte-blindate.html">Porte Blindate</a></li>
+                        <li><a href="persiane.html">Persiane</a></li>
+                        <li><a href="avvolgibili.html">Avvolgibili</a></li>
+                        <li><a href="cassonetti.html">Cassonetti</a></li>
+                        <li><a href="zanzariere.html">Zanzariere</a></li>
+                        <li><a href="grate-sicurezza.html">Grate di Sicurezza</a></li>
+                        <li><a href="tende-da-sole.html">Tende da Sole</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Informazioni</h3>
+                    <ul class="footer-links">
+                        <li><a href="chi-siamo.html">Chi Siamo</a></li>
+                        <li><a href="contatti.html">Contatti</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="cookie-policy.html">Cookie Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Seguici</h3>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/InfissiParadise/" target="_blank" aria-label="Facebook"><i class="ph ph-facebook-logo"></i></a>
+                        <a href="https://www.instagram.com/infissiparadise/" target="_blank" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Showroom Infissi - P.IVA 18042301004. Tutti i diritti riservati. - <a href="privacy.html">Privacy</a> | <a href="cookie-policy.html">Cookie</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js" defer></script>
+</body>
+
+</html>
