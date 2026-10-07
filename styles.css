@@ -733,15 +733,15 @@ img{
 
 
 .hero-finestre{
- background-image:url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+ background-image:url('img/unsplash/photo-1600585154340-be6161a56a0c-1920.jpg');
 }
 
 .hero-porte-blindate{
- background-image:url('https://images.unsplash.com/photo-1628745277861-129b46ba1ec3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+ background-image:url('immaginiHome/portablindata.jpg');
 }
 
 .hero-persiane{
- background-image:url('https://plus.unsplash.com/premium_photo-1680287178349-f06b649d8e6a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+ background-image:url('immaginiHome/persiana-muro.jpg');
 }
 
 .hero-avvolgibili{
@@ -749,19 +749,19 @@ img{
 }
 
 .hero-cassonetti{
- background-image:url('https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+ background-image:url('img/unsplash/photo-1600566753190-17f0baa2a6c3-1920.jpg');
 }
 
 .hero-grate-sicurezza{
- background-image:url('https://images.unsplash.com/photo-1550989460-0adf9ea622e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+ background-image:url('img/unsplash/photo-1550989460-0adf9ea622e2-1920.jpg');
 }
 
 .hero-zanzariere{
- background-image:url('https://images.unsplash.com/photo-1598928506311-c55ded91a20c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+ background-image:url('img/unsplash/photo-1598928506311-c55ded91a20c-1920.jpg');
 }
 
 .hero-tende-da-sole{
- background-image:url('https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+ background-image:url('img/unsplash/photo-1616486338812-3dadae4b4ace-1920.jpg');
 }
 
 .category-hero h1{
@@ -1420,7 +1420,7 @@ img{
  text-align:center;
  color:white;
  position:relative;
- background-image:url('https://images.unsplash.com/photo-1423666639041-f56000c27a9a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+ background-image:url('img/unsplash/photo-1423666639041-f56000c27a9a-1920.jpg');
 }
 
 .contact-hero::before{
@@ -2551,7 +2551,7 @@ img{
  content:'';
  position:absolute;
  inset:0;
- background:url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=60') center/cover;
+ background:url('img/unsplash/photo-1600585154340-be6161a56a0c-1600.jpg') center/cover;
  opacity:0.15;
 }
 
@@ -2784,7 +2784,7 @@ img{
  content:'';
  position:absolute;
  inset:0;
- background:url('https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1600&q=60') center/cover;
+ background:url('img/unsplash/photo-1600566753190-17f0baa2a6c3-1600.jpg') center/cover;
  opacity:0.18;
 }
 
@@ -3408,4 +3408,55 @@ img{
 }
 .badge {
  animation: pulseGlow 3s infinite;
+}
+
+/* --- Skip link (accessibilita) --- */
+.skip-link{
+ position:fixed;
+ top:-120px;
+ left:16px;
+ z-index:10000;
+ padding:14px 22px;
+ background:var(--primary);
+ color:#fff;
+ font-weight:600;
+ font-size:15px;
+ text-decoration:none;
+ border-radius:0 0 8px 8px;
+ box-shadow:var(--shadow-md);
+ transition:top .2s ease;
+}
+.skip-link:focus{
+ top:0;
+}
+#main-content:focus{
+ outline:none;
+}
+
+/* --- Nav a 11 voci: riduce il gap su viewport non larghi --- */
+@media (min-width:993px) and (max-width:1399px){
+ .nav-list{
+  gap:18px;
+ }
+ .nav-list li a{
+  font-size:13px;
+ }
+}
+
+
+/* --- Messaggio di conferma invio form (mostrato dall'ancora #grazie) --- */
+.form-success{
+ display:none;
+ margin-top:20px;
+ padding:16px 20px;
+ background:var(--primary-light);
+ border:1px solid var(--primary);
+ border-left:4px solid var(--primary);
+ border-radius:var(--radius-md);
+ color:var(--primary-dark);
+ font-weight:600;
+ text-align:left;
+}
+.form-success:target{
+ display:block;
 }

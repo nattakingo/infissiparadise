@@ -5,18 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#4C8A71">
-    <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml">
-    <meta name="description"
-        content="Tende da sole a caduta, a bracci e cassonetto per terrazze e giardini. Tessuti certificati, installazione a Roma. Protezione UV e comfort tutto l'anno.">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="alternate icon" href="favicon.ico" sizes="32x32">
+    <meta name="description" content="Tende da sole a caduta, a bracci e cassonetto per terrazze e giardini. Tessuti certificati, installazione a Roma. Protezione UV e comfort tutto l'anno.">
     <title>Tende da Sole | ShowRoom Infissi</title>
-    <!-- Google Fonts (non-render-blocking) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://images.unsplash.com">
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet"></noscript>
-    <link rel="preload" href="https://unpkg.com/@phosphor-icons/web" as="script">
-    <script src="https://unpkg.com/@phosphor-icons/web" defer></script>
+    <link rel="canonical" href="https://infissiparadise.it/tende-da-sole.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="ShowRoom Infissi">
+    <meta property="og:locale" content="it_IT">
+    <meta property="og:url" content="https://infissiparadise.it/tende-da-sole.html">
+    <meta property="og:title" content="Tende da Sole | ShowRoom Infissi">
+    <meta property="og:description" content="Tende da sole a caduta, a bracci e cassonetto per terrazze e giardini. Tessuti certificati, installazione a Roma. Protezione UV e comfort tutto l'anno.">
+    <meta property="og:image" content="https://infissiparadise.it/img/unsplash/photo-1616486338812-3dadae4b4ace-1920.jpg">
+    <meta property="og:image:width" content="1920">
+    <meta property="og:image:height" content="1080">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Tende da Sole | ShowRoom Infissi">
+    <meta name="twitter:description" content="Tende da sole a caduta, a bracci e cassonetto per terrazze e giardini. Tessuti certificati, installazione a Roma. Protezione UV e comfort tutto l'anno.">
+    <meta name="twitter:image" content="https://infissiparadise.it/img/unsplash/photo-1616486338812-3dadae4b4ace-1920.jpg">
+
+    <link rel="stylesheet" href="fonts/inter.css">
+    <link rel="stylesheet" href="fonts/phosphor.css">
     <link rel="stylesheet" href="styles.css">
     <style>
         .category-hero.hero-tende-da-sole {
@@ -36,32 +45,42 @@
 </head>
 
 <body>
+    <a class="skip-link" href="#main-content">Salta al contenuto principale</a>
+        <!-- 1. Announcement Bar -->
         <div class="announcement-bar">
         <span>🚚INFISSI E SERRAMENTI A ROMA - TRASPORTO E MONTAGGIO CERTIFICATO INCLUSI</span>
         <div class="announcement-socials">
-            <a href="https://www.facebook.com/InfissiParadise/" target="_blank" aria-label="Facebook"><i class="ph ph-facebook-logo"></i></a>
-            <a href="https://www.instagram.com/infissiparadise/" target="_blank" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
+            <a href="https://www.facebook.com/InfissiParadise/" target="_blank" rel="noopener" aria-label="Facebook"><i class="ph ph-facebook-logo"></i></a>
+            <a href="https://www.instagram.com/infissiparadise/" target="_blank" rel="noopener" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
         </div>
     </div>
 
     <header class="header" id="main-header">
         <div class="header-top">
             <div class="header-container">
+                <!-- Mobile Menu Button -->
                 <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">
                     <i class="ph ph-list"></i>
                 </button>
+
+                <!-- Search -->
                 <div class="header-search">
                     <button aria-label="Cerca">
                         <i class="ph ph-magnifying-glass"></i>
                     </button>
+                    <!-- Search input hidden by default, can be expanded via JS -->
                 </div>
+
+                <!-- Logo -->
                 <div class="header-logo">
                     <a href="index.html">
-                        <img src="logo.png" alt="Infissi Paradise Logo" class="logo-img" width="1600" height="900" fetchpriority="high" srcset="logo.png 1600w" sizes="(max-width: 768px) 120px, 200px">
+                        <img src="logo.png" alt="Infissi Paradise Logo" class="logo-img" width="603" height="414" fetchpriority="high" srcset="logo.png 603w" sizes="(max-width: 768px) 120px, 200px">
                     </a>
                 </div>
             </div>
         </div>
+
+        <!-- Navigation Menu -->
         <nav class="header-nav" aria-label="Menu principale">
             <ul class="nav-list" id="nav-list">
                 <li><a href="index.html">Home</a></li>
@@ -72,13 +91,17 @@
                 <li><a href="cassonetti.html">Cassonetti</a></li>
                 <li><a href="zanzariere.html">Zanzariere</a></li>
                 <li><a href="grate-sicurezza.html">Grate di Sicurezza</a></li>
-                <li><a href="tende-da-sole.html" class="active">Tende da Sole</a></li>
+                <li><a href="tende-da-sole.html" aria-current="page" class="active">Tende da Sole</a></li>
+                <li><a href="chi-siamo.html">Chi Siamo</a></li>
+                <li><a href="contatti.html">Contatti</a></li>
             </ul>
         </nav>
+
+        <!-- Mobile Overlay -->
         <div class="nav-overlay" id="nav-overlay"></div>
     </header>
 
-    <main>
+    <main id="main-content" tabindex="-1">
         <!-- Category Hero -->
         <section class="category-hero hero-tende-da-sole">
             <div class="container">
@@ -103,7 +126,7 @@
             <div class="container">
                 <div class="product-detail-split">
                     <div class="product-split-image">
-                        <img src="immaginiTende/IMMAGINIPRESENTAZIONE/TME.jpg" alt="Tenda TME" loading="lazy" decoding="async" width="2126" height="1540">
+                        <img src="immaginiTende/IMMAGINIPRESENTAZIONE/TME.jpg" alt="Tenda TME" loading="lazy" decoding="async" width="1600" height="1159">
                     </div>
                     <div class="product-split-content">
                         <span class="badge">TME</span>
@@ -139,7 +162,7 @@
             <div class="container">
                 <div class="product-detail-split">
                     <div class="product-split-image">
-                        <img src="immaginiTende/IMMAGINIPRESENTAZIONE/TBC.jpg" alt="Tenda T-ZIP" loading="lazy" decoding="async" width="2135" height="1536">
+                        <img src="immaginiTende/IMMAGINIPRESENTAZIONE/TBC.jpg" alt="Tenda T-ZIP" loading="lazy" decoding="async" width="1600" height="1151">
                     </div>
                     <div class="product-split-content">
                         <span class="badge">T-ZIP</span>
@@ -157,7 +180,7 @@
             <div class="container">
                 <div class="product-detail-split row-reverse">
                     <div class="product-split-image">
-                        <img src="immaginiTende/IMMAGINIPRESENTAZIONE/tLIBERTY.jpg" alt="Tenda T-LIBERTY" loading="lazy" decoding="async" width="3110" height="2000">
+                        <img src="immaginiTende/IMMAGINIPRESENTAZIONE/tLIBERTY.jpg" alt="Tenda T-LIBERTY" loading="lazy" decoding="async" width="1600" height="1029">
                     </div>
                     <div class="product-split-content">
                         <span class="badge">T-LIBERTY</span>
@@ -211,7 +234,7 @@
             <div class="container">
                 <div class="product-detail-split">
                     <div class="product-split-image">
-                        <img src="immaginiTende/IMMAGINIPRESENTAZIONE/TBC.jpg" alt="Tenda T-HIDE" loading="lazy" decoding="async" width="2135" height="1536">
+                        <img src="immaginiTende/IMMAGINIPRESENTAZIONE/TBC.jpg" alt="Tenda T-HIDE" loading="lazy" decoding="async" width="1600" height="1151">
                     </div>
                     <div class="product-split-content">
                         <span class="badge">T-HIDE</span>
@@ -229,7 +252,7 @@
             <div class="container">
                 <div class="product-detail-split row-reverse">
                     <div class="product-split-image">
-                        <img src="immaginiTende/IMMAGINIPRESENTAZIONE/TBC.jpg" alt="Tenda TBC" loading="lazy" decoding="async" width="2135" height="1536">
+                        <img src="immaginiTende/IMMAGINIPRESENTAZIONE/TBC.jpg" alt="Tenda TBC" loading="lazy" decoding="async" width="1600" height="1151">
                     </div>
                     <div class="product-split-content">
                         <span class="badge">TBC</span>
@@ -247,7 +270,7 @@
             <div class="container">
                 <div class="product-detail-split">
                     <div class="product-split-image">
-                        <img src="immaginiTende/IMMAGINIPRESENTAZIONE/TBQ.jpg" alt="Tenda TBQ" loading="lazy" decoding="async" width="2604" height="2000">
+                        <img src="immaginiTende/IMMAGINIPRESENTAZIONE/TBQ.jpg" alt="Tenda TBQ" loading="lazy" decoding="async" width="1600" height="1229">
                     </div>
                     <div class="product-split-content">
                         <span class="badge">TBQ</span>
@@ -368,7 +391,7 @@
                         </ul>
                     </div>
                     <div class="product-split-image">
-                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?auto=format&fit=crop&w=600&q=60" alt="Automazione Tende" loading="lazy" decoding="async" width="800" height="600">
+                        <img src="immaginiTende/IMMAGINIPRESENTAZIONE/TMA.jpg" alt="Automazione Tende" loading="lazy" decoding="async" width="1072" height="609">
                     </div>
                 </div>
 
@@ -384,7 +407,7 @@
                         </div>
                     </div>
                     <div class="product-split-image">
-                        <img src="https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?auto=format&fit=crop&w=600&q=60" alt="Dettaglio Tessuto" loading="lazy" decoding="async" width="800" height="600">
+                        <img src="img/unsplash/photo-1516455590571-18256e5bb9ff-600.jpg" alt="Dettaglio Tessuto" loading="lazy" decoding="async" width="600" height="400">
                     </div>
                 </div>
             </div>
@@ -400,19 +423,19 @@
                 </div>
                 
                 <div class="gallery-grid">
-                    <div class="gallery-item"><img src="immaginiTende/3A2A27FE-F781-4CED-81AC-7D571737CEDB.JPG" alt="Lavoro Tende 1" loading="lazy" decoding="async" width="1440" height="1800"></div>
-                    <div class="gallery-item"><img src="immaginiTende/9433E608-918C-4655-B135-BF84F3F26C99.JPG" alt="Lavoro Tende 2" loading="lazy" decoding="async" width="1440" height="1800"></div>
-                    <div class="gallery-item"><img src="immaginiTende/991B460E-D9BC-4EA6-98C9-B00CF0712FF7.JPG" alt="Lavoro Tende 3" loading="lazy" decoding="async" width="1440" height="1800"></div>
-                    <div class="gallery-item"><img src="immaginiTende/BF8070D6-4149-4F00-BDD7-C17E7D9B826A.JPG" alt="Lavoro Tende 4" loading="lazy" decoding="async" width="1440" height="1800"></div>
-                    <div class="gallery-item"><img src="immaginiTende/IMG_0007.JPG" alt="Lavoro Tende 5" loading="lazy" decoding="async" width="4032" height="3024"></div>
+                    <div class="gallery-item"><img src="immaginiTende/3A2A27FE-F781-4CED-81AC-7D571737CEDB.JPG" alt="Lavoro Tende 1" loading="lazy" decoding="async" width="1280" height="1600"></div>
+                    <div class="gallery-item"><img src="immaginiTende/9433E608-918C-4655-B135-BF84F3F26C99.JPG" alt="Lavoro Tende 2" loading="lazy" decoding="async" width="1280" height="1600"></div>
+                    <div class="gallery-item"><img src="immaginiTende/991B460E-D9BC-4EA6-98C9-B00CF0712FF7.JPG" alt="Lavoro Tende 3" loading="lazy" decoding="async" width="1280" height="1600"></div>
+                    <div class="gallery-item"><img src="immaginiTende/BF8070D6-4149-4F00-BDD7-C17E7D9B826A.JPG" alt="Lavoro Tende 4" loading="lazy" decoding="async" width="1280" height="1600"></div>
+                    <div class="gallery-item"><img src="immaginiTende/IMG_0007.JPG" alt="Lavoro Tende 5" loading="lazy" decoding="async" width="1600" height="1200"></div>
                     <div class="gallery-item"><img src="immaginiTende/IMG_0009.JPG" alt="Lavoro Tende 6" loading="lazy" decoding="async" width="576" height="960"></div>
                     <div class="gallery-item"><img src="immaginiTende/IMG_0010.JPG" alt="Lavoro Tende 7" loading="lazy" decoding="async" width="576" height="960"></div>
-                    <div class="gallery-item"><img src="immaginiTende/IMG_0270.JPG" alt="Lavoro Tende 8" loading="lazy" decoding="async" width="3264" height="2448"></div>
-                    <div class="gallery-item"><img src="immaginiTende/IMG_0272.JPG" alt="Lavoro Tende 9" loading="lazy" decoding="async" width="3264" height="2448"></div>
-                    <div class="gallery-item"><img src="immaginiTende/IMG_0354.JPG" alt="Lavoro Tende 10" loading="lazy" decoding="async" width="3264" height="2448"></div>
-                    <div class="gallery-item"><img src="immaginiTende/IMG_0355.JPG" alt="Lavoro Tende 11" loading="lazy" decoding="async" width="3264" height="2448"></div>
+                    <div class="gallery-item"><img src="immaginiTende/IMG_0270.JPG" alt="Lavoro Tende 8" loading="lazy" decoding="async" width="1200" height="1600"></div>
+                    <div class="gallery-item"><img src="immaginiTende/IMG_0272.JPG" alt="Lavoro Tende 9" loading="lazy" decoding="async" width="1200" height="1600"></div>
+                    <div class="gallery-item"><img src="immaginiTende/IMG_0354.JPG" alt="Lavoro Tende 10" loading="lazy" decoding="async" width="1600" height="1200"></div>
+                    <div class="gallery-item"><img src="immaginiTende/IMG_0355.JPG" alt="Lavoro Tende 11" loading="lazy" decoding="async" width="1600" height="1200"></div>
                     <div class="gallery-item"><img src="immaginiTende/IMG_0442.JPG" alt="Lavoro Tende 12" loading="lazy" decoding="async" width="1080" height="1080"></div>
-                    <div class="gallery-item"><img src="immaginiTende/IMG_0443 2.JPG" alt="Lavoro Tende 13" loading="lazy" decoding="async" width="1080" height="1080"></div>
+                    <div class="gallery-item"><img src="immaginiTende/IMG_0443-2.JPG" alt="Lavoro Tende 13" loading="lazy" decoding="async" width="1080" height="1080"></div>
                 </div>
             </div>
         </section>
@@ -442,7 +465,7 @@
                 <!-- Info Azienda -->
                 <div class="footer-col brand-col">
                     <div class="footer-logo">
-                        <img src="logo.png" alt="Infissi Paradise Logo" class="logo-img" width="1600" height="900" loading="lazy" decoding="async" srcset="logo.png 1600w" sizes="(max-width: 768px) 120px, 200px">
+                        <img src="logo.png" alt="Infissi Paradise Logo" class="logo-img" width="603" height="414" loading="lazy" decoding="async" srcset="logo.png 603w" sizes="(max-width: 768px) 120px, 200px">
                     </div>
                     <p class="company-desc">L'azienda specializzata nella vendita e installazione di infissi,
                         porte e sistemi di sicurezza di alta qualità dal design Made in Italy.</p>
@@ -479,8 +502,8 @@
                 <div class="footer-col">
                     <h3>Seguici</h3>
                     <div class="social-links">
-                        <a href="https://www.facebook.com/InfissiParadise/" target="_blank" aria-label="Facebook"><i class="ph ph-facebook-logo"></i></a>
-                        <a href="https://www.instagram.com/infissiparadise/" target="_blank" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
+                        <a href="https://www.facebook.com/InfissiParadise/" target="_blank" rel="noopener" aria-label="Facebook"><i class="ph ph-facebook-logo"></i></a>
+                        <a href="https://www.instagram.com/infissiparadise/" target="_blank" rel="noopener" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
                     </div>
                 </div>
             </div>

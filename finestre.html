@@ -5,17 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#4C8A71">
-    <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml">
-    <meta name="description"
-        content="Scopri la nostra gamma di finestre e portefinestre in PVC, alluminio e legno. Serramenti certificati per il massimo risparmio energetico. Preventivo a Roma e provincia.">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="alternate icon" href="favicon.ico" sizes="32x32">
+    <meta name="description" content="Finestre e portefinestre in PVC, alluminio e legno. Serramenti certificati per risparmio energetico e isolamento acustico. Preventivo a Roma e provincia.">
     <title>Finestre e Portefinestre | ShowRoom Infissi</title>
-    <!-- Google Fonts (non-render-blocking) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet"></noscript>
-    <link rel="preload" href="https://unpkg.com/@phosphor-icons/web" as="script">
-    <script src="https://unpkg.com/@phosphor-icons/web" defer></script>
+    <link rel="canonical" href="https://infissiparadise.it/finestre.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="ShowRoom Infissi">
+    <meta property="og:locale" content="it_IT">
+    <meta property="og:url" content="https://infissiparadise.it/finestre.html">
+    <meta property="og:title" content="Finestre e Portefinestre | ShowRoom Infissi">
+    <meta property="og:description" content="Finestre e portefinestre in PVC, alluminio e legno. Serramenti certificati per risparmio energetico e isolamento acustico. Preventivo a Roma e provincia.">
+    <meta property="og:image" content="https://infissiparadise.it/img/unsplash/photo-1600585154340-be6161a56a0c-1920.jpg">
+    <meta property="og:image:width" content="1920">
+    <meta property="og:image:height" content="1280">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Finestre e Portefinestre | ShowRoom Infissi">
+    <meta name="twitter:description" content="Finestre e portefinestre in PVC, alluminio e legno. Serramenti certificati per risparmio energetico e isolamento acustico. Preventivo a Roma e provincia.">
+    <meta name="twitter:image" content="https://infissiparadise.it/img/unsplash/photo-1600585154340-be6161a56a0c-1920.jpg">
+
+    <link rel="stylesheet" href="fonts/inter.css">
+    <link rel="stylesheet" href="fonts/phosphor.css">
     <link rel="stylesheet" href="styles.css">
     <style>
         .finestre-hero {
@@ -39,36 +49,46 @@
 </head>
 
 <body>
+    <a class="skip-link" href="#main-content">Salta al contenuto principale</a>
+        <!-- 1. Announcement Bar -->
         <div class="announcement-bar">
         <span>🚚INFISSI E SERRAMENTI A ROMA - TRASPORTO E MONTAGGIO CERTIFICATO INCLUSI</span>
         <div class="announcement-socials">
-            <a href="https://www.facebook.com/InfissiParadise/" target="_blank" aria-label="Facebook"><i class="ph ph-facebook-logo"></i></a>
-            <a href="https://www.instagram.com/infissiparadise/" target="_blank" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
+            <a href="https://www.facebook.com/InfissiParadise/" target="_blank" rel="noopener" aria-label="Facebook"><i class="ph ph-facebook-logo"></i></a>
+            <a href="https://www.instagram.com/infissiparadise/" target="_blank" rel="noopener" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
         </div>
     </div>
 
     <header class="header" id="main-header">
         <div class="header-top">
             <div class="header-container">
+                <!-- Mobile Menu Button -->
                 <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">
                     <i class="ph ph-list"></i>
                 </button>
+
+                <!-- Search -->
                 <div class="header-search">
                     <button aria-label="Cerca">
                         <i class="ph ph-magnifying-glass"></i>
                     </button>
+                    <!-- Search input hidden by default, can be expanded via JS -->
                 </div>
+
+                <!-- Logo -->
                 <div class="header-logo">
                     <a href="index.html">
-                        <img src="logo.png" alt="Infissi Paradise Logo" class="logo-img" width="1600" height="900" fetchpriority="high" srcset="logo.png 1600w" sizes="(max-width: 768px) 120px, 200px">
+                        <img src="logo.png" alt="Infissi Paradise Logo" class="logo-img" width="603" height="414" fetchpriority="high" srcset="logo.png 603w" sizes="(max-width: 768px) 120px, 200px">
                     </a>
                 </div>
             </div>
         </div>
+
+        <!-- Navigation Menu -->
         <nav class="header-nav" aria-label="Menu principale">
             <ul class="nav-list" id="nav-list">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="finestre.html" class="active">Finestre e Portefinestre</a></li>
+                <li><a href="finestre.html" aria-current="page" class="active">Finestre e Portefinestre</a></li>
                 <li><a href="porte-blindate.html">Porte Blindate</a></li>
                 <li><a href="persiane.html">Persiane</a></li>
                 <li><a href="avvolgibili.html">Avvolgibili</a></li>
@@ -76,14 +96,18 @@
                 <li><a href="zanzariere.html">Zanzariere</a></li>
                 <li><a href="grate-sicurezza.html">Grate di Sicurezza</a></li>
                 <li><a href="tende-da-sole.html">Tende da Sole</a></li>
+                <li><a href="chi-siamo.html">Chi Siamo</a></li>
+                <li><a href="contatti.html">Contatti</a></li>
             </ul>
         </nav>
+
+        <!-- Mobile Overlay -->
         <div class="nav-overlay" id="nav-overlay"></div>
     </header>
 
 
 
-    <main>
+    <main id="main-content" tabindex="-1">
         <!-- Category Hero -->
         <section class="finestre-hero">
             <div class="container">
@@ -334,7 +358,7 @@
                     <div class="gamma-card">
                         <a href="https://window.rehau.com/it-it/finestre-porte" target="_blank" rel="noopener" class="gamma-card-link">
                             <div class="gamma-image-container">
-                                <img src="immaginifinestre/gamma_artevo.png" alt="Finestre ARTEVO" loading="lazy" width="1024" height="1024">
+                                <img src="immaginifinestre/gamma_artevo.webp" alt="Finestre ARTEVO" loading="lazy" width="1024" height="1024">
                                 <span class="gamma-badge">Novità</span>
                                 <div class="gamma-image-overlay">
                                     <h3>Performance a 360°</h3>
@@ -354,7 +378,7 @@
                     <div class="gamma-card">
                         <a href="https://window.rehau.com/it-it/finestre-porte" target="_blank" rel="noopener" class="gamma-card-link">
                             <div class="gamma-image-container">
-                                <img src="immaginifinestre/gamma_design70.png" alt="DESIGN 70" loading="lazy" width="1024" height="1024">
+                                <img src="immaginifinestre/gamma_design70.webp" alt="DESIGN 70" loading="lazy" width="1024" height="1024">
                                 <div class="gamma-image-overlay">
                                     <h3>Benessere a 360°</h3>
                                 </div>
@@ -373,7 +397,7 @@
                     <div class="gamma-card">
                         <a href="https://window.rehau.com/it-it/finestre-porte" target="_blank" rel="noopener" class="gamma-card-link">
                             <div class="gamma-image-container">
-                                <img src="immaginifinestre/gamma_synegoslide.png" alt="SYNEGO SLIDE" loading="lazy" width="1024" height="1024">
+                                <img src="immaginifinestre/gamma_synegoslide.webp" alt="SYNEGO SLIDE" loading="lazy" width="1024" height="1024">
                                 <div class="gamma-image-overlay">
                                     <h3>Per ogni casa</h3>
                                 </div>
@@ -392,7 +416,7 @@
                     <div class="gamma-card">
                         <a href="https://window.rehau.com/it-it/finestre-porte" target="_blank" rel="noopener" class="gamma-card-link">
                             <div class="gamma-image-container">
-                                <img src="immaginifinestre/gamma_synego.png" alt="SYNEGO" loading="lazy" width="1024" height="1024">
+                                <img src="immaginifinestre/gamma_synego.webp" alt="SYNEGO" loading="lazy" width="1024" height="1024">
                                 <div class="gamma-image-overlay">
                                     <h3>Creare spazio</h3>
                                 </div>
@@ -420,16 +444,16 @@
                 </div>
 
                 <div class="gallery-grid">
-                    <div class="gallery-item"><img src="immaginifinestre/lavori/301832A8-0C01-4592-ABBC-EDF3C802FDCF.JPG" alt="Installazione Finestra 1" loading="lazy" decoding="async" width="3023" height="3023"></div>
-                    <div class="gallery-item"><img src="immaginifinestre/lavori/7866E061-CAC3-40E9-90D1-4A861792E38C.JPG" alt="Installazione Finestra 2" loading="lazy" decoding="async" width="1420" height="1775"></div>
-                    <div class="gallery-item"><img src="immaginifinestre/lavori/78CC8873-26D6-4F71-996A-75CED3008D17 2.JPG" alt="Installazione Finestra 3" loading="lazy" decoding="async" width="1440" height="1440"></div>
-                    <div class="gallery-item"><img src="immaginifinestre/lavori/AE847E4F-3904-46B0-9AE8-2BDE3DAD0FA0.JPG" alt="Installazione Finestra 4" loading="lazy" decoding="async" width="1420" height="1775"></div>
-                    <div class="gallery-item"><img src="immaginifinestre/lavori/APC_0033.JPG" alt="Installazione Finestra 5" loading="lazy" decoding="async" width="3024" height="4032"></div>
-                    <div class="gallery-item"><img src="immaginifinestre/lavori/B331F784-95DD-4FBA-B69E-C4942AA7C3CB.JPG" alt="Installazione Finestra 6" loading="lazy" decoding="async" width="1420" height="1680"></div>
-                    <div class="gallery-item"><img src="immaginifinestre/lavori/D07A8840-CC5E-482D-9716-6D0C5A143F40 2.JPG" alt="Installazione Finestra 7" loading="lazy" decoding="async" width="1440" height="1440"></div>
+                    <div class="gallery-item"><img src="immaginifinestre/lavori/301832A8-0C01-4592-ABBC-EDF3C802FDCF.JPG" alt="Installazione Finestra 1" loading="lazy" decoding="async" width="1600" height="1600"></div>
+                    <div class="gallery-item"><img src="immaginifinestre/lavori/7866E061-CAC3-40E9-90D1-4A861792E38C.JPG" alt="Installazione Finestra 2" loading="lazy" decoding="async" width="1280" height="1600"></div>
+                    <div class="gallery-item"><img src="immaginifinestre/lavori/78CC8873-26D6-4F71-996A-75CED3008D17-2.JPG" alt="Installazione Finestra 3" loading="lazy" decoding="async" width="1440" height="1440"></div>
+                    <div class="gallery-item"><img src="immaginifinestre/lavori/AE847E4F-3904-46B0-9AE8-2BDE3DAD0FA0.JPG" alt="Installazione Finestra 4" loading="lazy" decoding="async" width="1280" height="1600"></div>
+                    <div class="gallery-item"><img src="immaginifinestre/lavori/APC_0033.JPG" alt="Installazione Finestra 5" loading="lazy" decoding="async" width="1200" height="1600"></div>
+                    <div class="gallery-item"><img src="immaginifinestre/lavori/B331F784-95DD-4FBA-B69E-C4942AA7C3CB.JPG" alt="Installazione Finestra 6" loading="lazy" decoding="async" width="1352" height="1600"></div>
+                    <div class="gallery-item"><img src="immaginifinestre/lavori/D07A8840-CC5E-482D-9716-6D0C5A143F40-2.JPG" alt="Installazione Finestra 7" loading="lazy" decoding="async" width="1440" height="1440"></div>
                     <div class="gallery-item"><img src="immaginifinestre/lavori/D553377D-E5D5-4E45-9467-980657AC9762.JPG" alt="Installazione Finestra 8" loading="lazy" decoding="async" width="1440" height="1440"></div>
-                    <div class="gallery-item"><img src="immaginifinestre/lavori/DC60AA98-F2F1-437F-BB39-E8DB0BDA2AAE.JPG" alt="Installazione Finestra 9" loading="lazy" decoding="async" width="1420" height="1680"></div>
-                    <div class="gallery-item"><img src="immaginifinestre/lavori/IMG_0028.JPG" alt="Installazione Finestra 10" loading="lazy" decoding="async" width="4032" height="3024"></div>
+                    <div class="gallery-item"><img src="immaginifinestre/lavori/DC60AA98-F2F1-437F-BB39-E8DB0BDA2AAE.JPG" alt="Installazione Finestra 9" loading="lazy" decoding="async" width="1352" height="1600"></div>
+                    <div class="gallery-item"><img src="immaginifinestre/lavori/IMG_0028.JPG" alt="Installazione Finestra 10" loading="lazy" decoding="async" width="1600" height="1200"></div>
                     <div class="gallery-item"><img src="immaginifinestre/lavori/IMG_0041.JPG" alt="Installazione Finestra 11" loading="lazy" decoding="async" width="1080" height="1080"></div>
                     <div class="gallery-item"><img src="immaginifinestre/lavori/IMG_0044.JPG" alt="Installazione Finestra 12" loading="lazy" decoding="async" width="1080" height="1080"></div>
                 </div>
@@ -445,7 +469,7 @@
                 <!-- Info Azienda -->
                 <div class="footer-col brand-col">
                     <div class="footer-logo">
-                        <img src="logo.png" alt="Infissi Paradise Logo" class="logo-img" width="1600" height="900" loading="lazy" decoding="async" srcset="logo.png 1600w" sizes="(max-width: 768px) 120px, 200px">
+                        <img src="logo.png" alt="Infissi Paradise Logo" class="logo-img" width="603" height="414" loading="lazy" decoding="async" srcset="logo.png 603w" sizes="(max-width: 768px) 120px, 200px">
                     </div>
                     <p class="company-desc">L'azienda specializzata nella vendita e installazione di infissi,
                         porte e sistemi di sicurezza di alta qualità dal design Made in Italy.</p>
@@ -482,8 +506,8 @@
                 <div class="footer-col">
                     <h3>Seguici</h3>
                     <div class="social-links">
-                        <a href="https://www.facebook.com/InfissiParadise/" target="_blank" aria-label="Facebook"><i class="ph ph-facebook-logo"></i></a>
-                        <a href="https://www.instagram.com/infissiparadise/" target="_blank" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
+                        <a href="https://www.facebook.com/InfissiParadise/" target="_blank" rel="noopener" aria-label="Facebook"><i class="ph ph-facebook-logo"></i></a>
+                        <a href="https://www.instagram.com/infissiparadise/" target="_blank" rel="noopener" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
                     </div>
                 </div>
             </div>

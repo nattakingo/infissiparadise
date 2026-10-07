@@ -5,16 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#4C8A71">
-    <meta name="description"
-        content="Cookie Policy di ShowRoom Infissi / Infissi Paradise. Cookie utilizzati, finalità e come gestire le preferenze sui cookie.">
+    <meta name="description" content="Cookie Policy di ShowRoom Infissi / Infissi Paradise. Cookie utilizzati, finalità e come gestire le preferenze sui cookie.">
     <title>Cookie Policy | ShowRoom Infissi</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet"></noscript>
-    <link rel="preload" href="https://unpkg.com/@phosphor-icons/web" as="script">
-    <script src="https://unpkg.com/@phosphor-icons/web" defer></script>
-    <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="canonical" href="https://infissiparadise.it/cookie-policy.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="ShowRoom Infissi">
+    <meta property="og:locale" content="it_IT">
+    <meta property="og:url" content="https://infissiparadise.it/cookie-policy.html">
+    <meta property="og:title" content="Cookie Policy | ShowRoom Infissi">
+    <meta property="og:description" content="Cookie Policy di ShowRoom Infissi / Infissi Paradise. Cookie utilizzati, finalità e come gestire le preferenze sui cookie.">
+    <meta property="og:image" content="https://infissiparadise.it/logo.png">
+    <meta property="og:image:width" content="603">
+    <meta property="og:image:height" content="414">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Cookie Policy | ShowRoom Infissi">
+    <meta name="twitter:description" content="Cookie Policy di ShowRoom Infissi / Infissi Paradise. Cookie utilizzati, finalità e come gestire le preferenze sui cookie.">
+    <meta name="twitter:image" content="https://infissiparadise.it/logo.png">
+
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="alternate icon" href="favicon.ico" sizes="32x32">
+    <link rel="stylesheet" href="fonts/inter.css">
+    <link rel="stylesheet" href="fonts/phosphor.css">
     <link rel="stylesheet" href="styles.css">
     <style>
         .legal-hero {
@@ -105,32 +116,42 @@
 </head>
 
 <body>
-    <div class="announcement-bar">
+    <a class="skip-link" href="#main-content">Salta al contenuto principale</a>
+    <!-- 1. Announcement Bar -->
+        <div class="announcement-bar">
         <span>🚚INFISSI E SERRAMENTI A ROMA - TRASPORTO E MONTAGGIO CERTIFICATO INCLUSI</span>
         <div class="announcement-socials">
-            <a href="https://www.facebook.com/InfissiParadise/" target="_blank" aria-label="Facebook"><i class="ph ph-facebook-logo"></i></a>
-            <a href="https://www.instagram.com/infissiparadise/" target="_blank" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
+            <a href="https://www.facebook.com/InfissiParadise/" target="_blank" rel="noopener" aria-label="Facebook"><i class="ph ph-facebook-logo"></i></a>
+            <a href="https://www.instagram.com/infissiparadise/" target="_blank" rel="noopener" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
         </div>
     </div>
 
     <header class="header" id="main-header">
         <div class="header-top">
             <div class="header-container">
+                <!-- Mobile Menu Button -->
                 <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">
                     <i class="ph ph-list"></i>
                 </button>
+
+                <!-- Search -->
                 <div class="header-search">
                     <button aria-label="Cerca">
                         <i class="ph ph-magnifying-glass"></i>
                     </button>
+                    <!-- Search input hidden by default, can be expanded via JS -->
                 </div>
+
+                <!-- Logo -->
                 <div class="header-logo">
                     <a href="index.html">
-                        <img src="logo.png" alt="Infissi Paradise Logo" class="logo-img" width="1600" height="900" fetchpriority="high" srcset="logo.png 1600w" sizes="(max-width: 768px) 120px, 200px">
+                        <img src="logo.png" alt="Infissi Paradise Logo" class="logo-img" width="603" height="414" fetchpriority="high" srcset="logo.png 603w" sizes="(max-width: 768px) 120px, 200px">
                     </a>
                 </div>
             </div>
         </div>
+
+        <!-- Navigation Menu -->
         <nav class="header-nav" aria-label="Menu principale">
             <ul class="nav-list" id="nav-list">
                 <li><a href="index.html">Home</a></li>
@@ -142,12 +163,16 @@
                 <li><a href="zanzariere.html">Zanzariere</a></li>
                 <li><a href="grate-sicurezza.html">Grate di Sicurezza</a></li>
                 <li><a href="tende-da-sole.html">Tende da Sole</a></li>
+                <li><a href="chi-siamo.html">Chi Siamo</a></li>
+                <li><a href="contatti.html">Contatti</a></li>
             </ul>
         </nav>
+
+        <!-- Mobile Overlay -->
         <div class="nav-overlay" id="nav-overlay"></div>
     </header>
 
-    <main>
+    <main id="main-content" tabindex="-1">
         <!-- Hero -->
         <section class="legal-hero">
             <div class="container">
@@ -193,13 +218,11 @@
             <h3>Risorse di terze parti</h3>
             <p>Il sito integra risorse provenienti da servizi di terze parti. Questi servizi possono impostare cookie o raccogliere dati di navigazione secondo le rispettive privacy policy:</p>
             <ul>
-                <li><strong>Google Fonts</strong> (fonts.googleapis.com / fonts.gstatic.com) — caricamento dei font del sito;</li>
-                <li><strong>Phosphor Icons</strong> (unpkg.com) — libreria di icone;</li>
-                <li><strong>Unsplash</strong> (images.unsplash.com) — immagini di supporto;</li>
                 <li><strong>Formspree</strong> — gestione dell'invio dei moduli di contatto;</li>
-                <li><strong>YouTube</strong> (youtube.com) — incorporazione di video;</li>
                 <li><strong>Facebook e Instagram</strong> — link ai profili social.</li>
             </ul>
+            <p>Font, icone e immagini sono ospitati direttamente su questo dominio: la loro
+                visualizzazione non comporta richieste a domini esterni né tracciamento da parte di terzi.</p>
             <p>Per informazioni complete sul trattamento dei dati da parte di questi servizi, si invitano gli utenti a consultare le rispettive privacy policy.</p>
 
             <h2>3. Come gestire i cookie</h2>
@@ -225,18 +248,21 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
+                <!-- Info Azienda -->
                 <div class="footer-col brand-col">
                     <div class="footer-logo">
-                        <img src="logo.png" alt="Infissi Paradise Logo" class="logo-img" width="1600" height="900" loading="lazy" decoding="async" srcset="logo.png 1600w" sizes="(max-width: 768px) 120px, 200px">
+                        <img src="logo.png" alt="Infissi Paradise Logo" class="logo-img" width="603" height="414" loading="lazy" decoding="async" srcset="logo.png 603w" sizes="(max-width: 768px) 120px, 200px">
                     </div>
                     <p class="company-desc">L'azienda specializzata nella vendita e installazione di infissi,
                         porte e sistemi di sicurezza di alta qualità dal design Made in Italy.</p>
                     <ul class="contact-list">
                         <li><i class="ph ph-envelope-simple"></i> infissiparadise@gmail.com</li>
                         <li><i class="ph ph-phone"></i> +39 339 699 2947</li>
+                        <!--<li><i class="ph ph-map-pin"></i> Via Roma 123, 00100 Roma (RM)</li>-->
                     </ul>
                 </div>
 
+                <!-- Categorie -->
                 <div class="footer-col">
                     <h3>Prodotti</h3>
                     <ul class="footer-links">
@@ -250,7 +276,6 @@
                         <li><a href="tende-da-sole.html">Tende da Sole</a></li>
                     </ul>
                 </div>
-
                 <div class="footer-col">
                     <h3>Informazioni</h3>
                     <ul class="footer-links">
@@ -260,18 +285,17 @@
                         <li><a href="cookie-policy.html">Cookie Policy</a></li>
                     </ul>
                 </div>
-
                 <div class="footer-col">
                     <h3>Seguici</h3>
                     <div class="social-links">
-                        <a href="https://www.facebook.com/InfissiParadise/" target="_blank" aria-label="Facebook"><i class="ph ph-facebook-logo"></i></a>
-                        <a href="https://www.instagram.com/infissiparadise/" target="_blank" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
+                        <a href="https://www.facebook.com/InfissiParadise/" target="_blank" rel="noopener" aria-label="Facebook"><i class="ph ph-facebook-logo"></i></a>
+                        <a href="https://www.instagram.com/infissiparadise/" target="_blank" rel="noopener" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
                     </div>
                 </div>
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2026 Showroom Infissi - P.IVA 18042301004. Tutti i diritti riservati. - <a href="privacy.html">Privacy</a> | <a href="cookie-policy.html">Cookie</a></p>
+                <p>&copy; 2026 Showroom Infissi - P.IVA 18042301004. Tutti i diritti riservati.</p>
             </div>
         </div>
     </footer>

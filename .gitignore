@@ -1,0 +1,16 @@
+# Dipendenze / build
+node_modules/
+*.pyc
+__pycache__/
+
+# OS e editor
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+*.swp
+.idea/
+.vscode/
+
+# File generati
+*.log
