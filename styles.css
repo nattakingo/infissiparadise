@@ -1,4 +1,4 @@
-﻿
+
 :root{
  
  --primary:#4C8A71;
@@ -3357,4 +3357,55 @@ img{
  .sp-types-grid{
  grid-template-columns:1fr;
 }
+}
+
+/* --- Premium Micro-Animations --- */
+
+/* Scroll Reveal (GPU Accelerated) */
+.scroll-reveal {
+ opacity: 0;
+ transform: translateY(30px);
+ transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+ will-change: opacity, transform;
+}
+
+.scroll-reveal.revealed {
+ opacity: 1;
+ transform: translateY(0);
+}
+
+/* Feature Chips Hover */
+.feature-chip {
+ transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease !important;
+}
+.feature-chip:hover {
+ transform: translateY(-3px);
+ background-color: var(--primary) !important;
+ color: #fff !important;
+}
+
+/* Button Subtle Glow */
+.btn-primary {
+ transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease, background-color 0.3s ease !important;
+}
+.btn-primary:hover {
+ transform: translateY(-3px) scale(1.02);
+ box-shadow: 0 10px 25px rgba(76, 138, 113, 0.4) !important;
+}
+
+.btn-outline-white {
+ transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease !important;
+}
+.btn-outline-white:hover {
+ transform: translateY(-3px);
+}
+
+/* Badges gentle pulse */
+@keyframes pulseGlow {
+ 0% { box-shadow: 0 0 0 0 rgba(76, 138, 113, 0.4); }
+ 70% { box-shadow: 0 0 0 8px rgba(76, 138, 113, 0); }
+ 100% { box-shadow: 0 0 0 0 rgba(76, 138, 113, 0); }
+}
+.badge {
+ animation: pulseGlow 3s infinite;
 }
