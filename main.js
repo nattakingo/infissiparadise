@@ -1,13 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    /* --- 0. Deferred Video Autoplay (Desktop Only per Performance) --- */
+    /* --- 0. Deferred Video Autoplay --- */
     const heroVideo = document.querySelector('.slide-video');
     if (heroVideo) {
         window.addEventListener('load', () => {
-            // Su mobile disabilitiamo l'autoplay per non affossare l'LCP
-            if (window.matchMedia('(min-width: 768px)').matches) {
-                heroVideo.play().catch(() => {});
-            }
+            heroVideo.play().catch(() => {});
         }, { once: true });
     }
 
@@ -53,12 +50,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         startSlideShow();
     } else if (slides.length === 1) {
-        // If only one slide, just ensure it's active and video plays (Desktop only)
+        // If only one slide, just ensure it's active and video plays
         slides[0].classList.add('active');
         const video = slides[0].querySelector('video');
-        if (video && window.matchMedia('(min-width: 768px)').matches) {
-            video.play().catch(e => console.warn("Video autoplay prevented:", e));
-        }
+        if (video) video.play().catch(e => console.warn("Video autoplay prevented:", e));
     }
 
     /* --- 2. Mobile Navigation --- */
